@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RxJavaLecture</string>
+    <string name="first_week_observer_pattern_example_first">옵저버 패턴 소개 - 1</string>
 </resources>
