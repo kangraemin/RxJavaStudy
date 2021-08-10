@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".observerpattern.NoneObserverPatternActivity"></activity>
+        <activity android:name=".observerpattern.oberserverpattern.ObserverPatternActivity"></activity>
+        <activity android:name=".observerpattern.noneobserverpattern.NoneObserverPatternActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

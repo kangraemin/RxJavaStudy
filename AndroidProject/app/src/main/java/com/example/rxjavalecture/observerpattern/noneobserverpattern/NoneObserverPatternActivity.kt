@@ -1,4 +1,4 @@
-package com.example.rxjavalecture.observerpattern
+package com.example.rxjavalecture.observerpattern.noneobserverpattern
 
 import android.os.Bundle
 import android.text.Editable
