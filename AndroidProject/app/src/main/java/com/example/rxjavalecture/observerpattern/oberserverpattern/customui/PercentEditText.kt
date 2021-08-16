@@ -10,8 +10,7 @@ import com.example.rxjavalecture.observerpattern.oberserverpattern.RamsObserver
 import com.example.rxjavalecture.observerpattern.oberserverpattern.ObserverPatternActivity.Companion.progressSubject
 import com.example.rxjavalecture.util.toInt
 
-class PercentEditText : AppCompatEditText,
-    RamsObserver<Int> {
+class PercentEditText : AppCompatEditText, RamsObserver<Int> {
 
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)

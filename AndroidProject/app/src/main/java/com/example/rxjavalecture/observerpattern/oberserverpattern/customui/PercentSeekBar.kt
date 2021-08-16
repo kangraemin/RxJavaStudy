@@ -9,8 +9,7 @@ import com.example.rxjavalecture.TAG_OBSERVER_PATTERN
 import com.example.rxjavalecture.observerpattern.oberserverpattern.RamsObserver
 import com.example.rxjavalecture.observerpattern.oberserverpattern.ObserverPatternActivity
 
-class PercentSeekBar : AppCompatSeekBar,
-    RamsObserver<Int> {
+class PercentSeekBar : AppCompatSeekBar, RamsObserver<Int> {
 
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)

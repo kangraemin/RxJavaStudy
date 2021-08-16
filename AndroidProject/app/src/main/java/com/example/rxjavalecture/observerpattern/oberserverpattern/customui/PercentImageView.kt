@@ -6,8 +6,7 @@ import androidx.appcompat.widget.AppCompatImageView
 import com.example.rxjavalecture.observerpattern.oberserverpattern.RamsObserver
 import com.example.rxjavalecture.observerpattern.oberserverpattern.ObserverPatternActivity
 
-class PercentImageView : AppCompatImageView,
-    RamsObserver<Int> {
+class PercentImageView : AppCompatImageView, RamsObserver<Int> {
 
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)

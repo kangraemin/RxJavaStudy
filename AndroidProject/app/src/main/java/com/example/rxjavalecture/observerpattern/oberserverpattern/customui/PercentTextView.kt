@@ -7,8 +7,7 @@ import com.example.rxjavalecture.R
 import com.example.rxjavalecture.observerpattern.oberserverpattern.RamsObserver
 import com.example.rxjavalecture.observerpattern.oberserverpattern.ObserverPatternActivity
 
-class PercentTextView : AppCompatTextView,
-    RamsObserver<Int> {
+class PercentTextView : AppCompatTextView, RamsObserver<Int> {
 
     constructor(context: Context) : super(context)
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
