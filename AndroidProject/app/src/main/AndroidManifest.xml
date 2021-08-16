@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".introduction.reactive.ReactiveExampleActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name=".introduction.nonreactive.NonReactiveExampleActivity"
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".observerpattern.oberserverpattern.ObserverPatternActivity" />

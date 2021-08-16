@@ -7,4 +7,5 @@
     <string name="first_week_observer_pattern_example_first">옵저버 패턴 소개 - 1</string>
     <string name="first_week_observer_pattern_example_second">옵저버 패턴 소개 - 2</string>
     <string name="first_week_reactive_programming_example_first">반응형 프로그래밍 소개 - 1</string>
+    <string name="first_week_reactive_programming_example_second">반응형 프로그래밍 소개 - 2</string>
 </resources>
