@@ -10,7 +10,7 @@ import android.widget.SeekBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.rxjavalecture.R
-import com.example.rxjavalecture.TAG_OBSERVER_PATTERN
+import com.example.rxjavalecture.util.TAG_OBSERVER_PATTERN
 import com.example.rxjavalecture.util.toInt
 
 class NoneObserverPatternActivity : AppCompatActivity() {

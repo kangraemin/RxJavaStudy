@@ -5,7 +5,7 @@ import android.util.AttributeSet
 import android.util.Log
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.widget.doAfterTextChanged
-import com.example.rxjavalecture.TAG_OBSERVER_PATTERN
+import com.example.rxjavalecture.util.TAG_OBSERVER_PATTERN
 import com.example.rxjavalecture.observerpattern.oberserverpattern.RamsObserver
 import com.example.rxjavalecture.observerpattern.oberserverpattern.ObserverPatternActivity.Companion.progressSubject
 import com.example.rxjavalecture.util.toInt
