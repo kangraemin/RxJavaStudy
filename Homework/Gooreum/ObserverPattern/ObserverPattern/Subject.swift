@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Subject<T>  {
+class Subject<T> {
     
     private var observerList : [ObserverProtocol] = []
     private var value: T?
@@ -27,7 +27,6 @@ class Subject<T>  {
                     observer.notifyDataIsChanged(value: newValue )
                 }
             }
-            
         }
     }
     
@@ -38,7 +37,9 @@ class Subject<T>  {
     }
     
     //구독취소
-    func dispose() {
-        observerList.removeAll()
+    func dispose(observer: ObserverProtocol) {
+        if let index = observerList.firstIndex(where: {$0 === observer}) {
+            observerList.remove(at: index)
+        }
     }
 }

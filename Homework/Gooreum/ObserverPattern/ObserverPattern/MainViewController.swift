@@ -29,11 +29,5 @@ class MainViewController: UIViewController {
         self.percentTextField3 = CustomTextField(txtParency: self.txtTransparency3)
         self.percentLabel = CustomLabel(lbParency: self.lbTransparency)
     }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        //구독해제
-        MainViewController.progressSubject.dispose()
-    }
 }
 

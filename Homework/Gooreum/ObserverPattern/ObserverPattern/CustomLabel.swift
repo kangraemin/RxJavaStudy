@@ -19,5 +19,10 @@ class CustomLabel: ObserverProtocol {
     func notifyDataIsChanged<T>(value: T) {
         self.lbParency.text = "\(value)"
     }
+    
+    deinit {
+        //구독해제
+        MainViewController.progressSubject.dispose(observer: self)
+    }
 }
 

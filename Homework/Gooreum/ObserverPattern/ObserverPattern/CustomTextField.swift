@@ -9,6 +9,7 @@
 import UIKit
 
 class CustomTextField: ObserverProtocol {
+
     var txtParency: UITextField!
     
     init(txtParency: UITextField) {
@@ -25,5 +26,10 @@ class CustomTextField: ObserverProtocol {
     
     func notifyDataIsChanged<T>(value: T) {
         self.txtParency.text = "\(value)"
+    }
+    
+    deinit {
+        //구독해제
+        MainViewController.progressSubject.dispose(observer: self)
     }
 }
