@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RxStudy</string>
+    <string name="percent">퍼센트 :</string>
+    <string name="percent_seek_bar">퍼센트 조절 :</string>
+</resources>
