@@ -8,4 +8,10 @@
     <string name="first_week_observer_pattern_example_second">옵저버 패턴 소개 - 2</string>
     <string name="first_week_reactive_programming_example_first">반응형 프로그래밍 소개 - 1</string>
     <string name="first_week_reactive_programming_example_second">반응형 프로그래밍 소개 - 2</string>
+    <string name="third_week_stream_implementation_example_title">스트림 구현체 소개</string>
+    <string name="third_week_stream_implementation_example_observable">observable 데이터 발행</string>
+    <string name="third_week_stream_implementation_example_flowable">flowable 데이터 발행</string>
+    <string name="third_week_stream_implementation_example_single">single 데이터 발행</string>
+    <string name="third_week_stream_implementation_example_completable">completable 데이터 발행</string>
+    <string name="third_week_stream_implementation_example_maybe">maybe 데이터 발행</string>
 </resources>
