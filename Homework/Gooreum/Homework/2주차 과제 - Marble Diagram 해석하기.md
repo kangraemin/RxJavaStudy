@@ -1,3 +1,17 @@
+## **과제 내용**
+
+- [Rx operator documents](http://reactivex.io/documentation/operators.html)에서 operator의 Marble Diagram만 보고, 어떤 역할을 하는 operator 인지 유추 해 봅시다.
+- 갯수는 자율에 맡기나, operator 2개 이상 해보시면 좋을 것 같습니다.
+
+## **과제 목적**
+
+- Marble diagram 보는 법을 익혀 operator / stream의 행동을 좀 더 간단하게 확인 할 수 있도록 합니다.
+
+## **유의사항**
+
+- 먼저 operator에 대한 설명을 참조하지 않고 Marble diagram만 보고 분석 해 보시고, 해당 operator가 어떤 operator인지 찾아 보시는것을 권장드립니다.
+
+
 ## **1.Creating Observables**
 **Just**
 ![just](https://user-images.githubusercontent.com/48742165/132246478-92744dd4-a455-4425-9b5f-0d51de326003.png)
