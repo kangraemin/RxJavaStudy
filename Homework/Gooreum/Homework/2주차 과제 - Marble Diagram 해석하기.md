@@ -52,7 +52,8 @@
 <br />
 
 **throw**
-![throw](https://user-images.githubusercontent.com/48742165/132247207-af72767d-d9b5-471d-bf52-2eabc0712af3.png)![ignoreElementsAt](https://user-images.githubusercontent.com/48742165/132247554-723479b6-70e8-4780-8d13-fce3492fff4f.png)
+![throw](https://user-images.githubusercontent.com/48742165/132298183-cf2da2cc-73de-4c79-8fc1-bfd0f0ae19d2.png)
+
 
 - 에러 이벤트를 발행하는 스트림을 생성한다.
 <br />
@@ -60,19 +61,20 @@
 ## **2.Filtering**
 
 ### **ignoreElements**
-![ignoreElementsAt](https://user-images.githubusercontent.com/48742165/132247573-a58c1be2-25da-4b0f-87c1-63fa835d5047.png)
+![ignoreElements](https://user-images.githubusercontent.com/48742165/132247573-a58c1be2-25da-4b0f-87c1-63fa835d5047.png)
 
-- stream이 발행하고 있는 모든 이벤트를 무시한다.
+- stream이 onNext 이벤트를 발행하더라도 onComplete 이벤트만 발행한다.
 <br />
 
 ### **elementAt**
 ![elementAt](https://user-images.githubusercontent.com/48742165/132247183-36b177fb-15e8-459b-abeb-25b65163232f.png)
 
-- 스트림이 발행하는 특정 인덱스까지의 이벤트를 무시하고 이후의 이벤트부터 발행한다.
+- 스트림이 발행하는 아이템 중 특정 인덱스의 아이템만 발행한다.
 <br />
 
 ### **filter**
-![filtering](https://user-images.githubusercontent.com/48742165/132247189-7e7c36d7-4afe-4bbc-882e-54b21b593c93.png)
+![filter](https://user-images.githubusercontent.com/48742165/132298009-66af482d-035c-4930-acba-4ad9da04b656.png)
+
 
 - 스트림의 아이템 중 filter 조건식에 맞는 아이템만 방출한다.
 <br />
@@ -106,8 +108,10 @@
 
 - 스트림이 발행하는 아이템 중 중복되는 아이템은 하나만 발행하도록 한다.
 <br />
+
 ### **debounce**
-![debounce](https://user-images.githubusercontent.com/48742165/132247175-022bda40-610a-4f5a-b9bf-41bf821b76bf.png)
+![debounce](https://user-images.githubusercontent.com/48742165/132297566-68d4a653-2eeb-4c6d-9fe1-b41451832e5a.png)
+
 
 - 스트림이 발행하는 아이템 중에서 특정 시간이 지난 후에 발행된 아이템만을 발행하게 해준다.
 - 특정 시간이 지나기 전에 발행된 아이템들은 무시된다.
