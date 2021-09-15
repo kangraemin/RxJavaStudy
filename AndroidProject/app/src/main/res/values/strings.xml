@@ -20,4 +20,10 @@
     <string name="six_week_example_observe_on_main">observeOn main thread</string>
     <string name="six_week_example_subscribe_on_computation">subscribOn computation</string>
     <string name="six_week_multiple_observe_on">observeOn 여러번</string>
+    <string name="seven_week_example_title">Subject 소개</string>
+    <string name="seven_week_example_observable">Observable event</string>
+    <string name="seven_week_example_publish_subject_event">PublishSubject Event</string>
+    <string name="seven_week_example_behavior_subject_event">BehaviorSubject Event</string>
+    <string name="seven_week_example_async_subject_event">AsyncSubject Event</string>
+    <string name="seven_week_example_replay_subject_event">ReplaySubject Event</string>
 </resources>
