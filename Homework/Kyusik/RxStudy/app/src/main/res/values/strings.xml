@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RxStudy</string>
+    <string name="first_week_observer_pattern_opacity_title">투명도 : </string>
+    <string name="first_week_observer_pattern_opacity_hint">투명도를 입력 해 주세요.</string>
+    <string name="first_week_observer_pattern_opacity_seek_bar_title">투명도 조절 : </string>
+    <string name="first_week_observer_pattern_result_format">투명도 : %d%%</string>
+    <string name="graph_title">퍼센트 : </string>
+    <string name="graph_hint">퍼센트를 입력 해 주세요.</string>
+    <string name="graph_format">퍼센트 : %d%%</string>
+</resources>
