@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".streamimplementation.StreamImplementationExampleActivity"></activity>
+        <activity android:name=".scheduler.SchedulerExampleActivity"></activity>
+        <activity android:name=".streamimplementation.StreamImplementationExampleActivity" />
         <activity
             android:name=".introduction.reactive.ReactiveExampleActivity"
             android:windowSoftInputMode="adjustResize" />
