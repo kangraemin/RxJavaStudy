@@ -1,4 +1,4 @@
-package com.example.rxstudy.util
+package com.example.rxstudy.observerPattern.util
 
 import android.text.Editable
 

@@ -1,4 +1,4 @@
-package com.example.rxstudy
+package com.example.rxstudy.observerPattern
 
 class RxSubject<T> {
     private val observerList: MutableList<RxObserver<T>> = ArrayList()

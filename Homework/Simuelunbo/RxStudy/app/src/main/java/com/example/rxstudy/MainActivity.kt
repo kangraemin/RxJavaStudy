@@ -1,69 +1,19 @@
 package com.example.rxstudy
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.EditText
-import android.widget.SeekBar
-import androidx.core.widget.doAfterTextChanged
-import com.example.rxstudy.util.toInt
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
 
-class MainActivity : AppCompatActivity(),RxObserver<Int> {
+class MainActivity : AppCompatActivity() {
 
-    private lateinit var etPercent: EditText
-    private lateinit var sbPercent: SeekBar
-    private val progressSubject = RxSubject<Int>()
-    private var disableEditTextChangeListener = false
-
+    private lateinit var rvExampleList: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        etPercent = findViewById(R.id.et_percent)
-        sbPercent = findViewById(R.id.sb_percent)
-        progressSubject.subscribe(this)
-
-
-        etPercent.doAfterTextChanged {
-            if (!disableEditTextChangeListener) {
-                val percent = it.toInt()
-                if (isItProperRangeNumber(percent)) {
-                    progressSubject.value = percent
-                }
-            }
+        rvExampleList = findViewById(R.id.rv_example_list)
+        rvExampleList.apply {
+            adapter = MainAdapter(this@MainActivity)
         }
-        sbPercent.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                if (!disableEditTextChangeListener) {
-                    progressSubject.value = progress
-                }
-            }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar?) = Unit
-
-            override fun onStopTrackingTouch(seekBar: SeekBar?) = Unit
-
-        })
     }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        progressSubject.dispose(this)
-    }
-
-    private fun isItProperRangeNumber(inputNumber: Int): Boolean {
-        return inputNumber in 0..100
-    }
-
-    override fun notifyObserverUpdate(value: Int) {
-       value.let {
-           disableEditTextChangeListener = true
-           sbPercent.progress = it
-           etPercent.setText(value.toString())
-           disableEditTextChangeListener = false
-       }
-    }
-
-
 }
