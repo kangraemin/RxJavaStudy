@@ -13,9 +13,11 @@
 		2E02B87126EBA05C00CA3435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E02B86F26EBA05C00CA3435 /* Main.storyboard */; };
 		2E02B87326EBA05D00CA3435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E02B87226EBA05D00CA3435 /* Assets.xcassets */; };
 		2E02B87626EBA05D00CA3435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E02B87426EBA05D00CA3435 /* LaunchScreen.storyboard */; };
+		6C615B0E92A987045FBF7632 /* Pods_StreamWithScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1CEE72EFAF84A52AD2987E /* Pods_StreamWithScheduler.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19C6817ABF6201C70D15ED32 /* Pods-StreamWithScheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamWithScheduler.debug.xcconfig"; path = "Target Support Files/Pods-StreamWithScheduler/Pods-StreamWithScheduler.debug.xcconfig"; sourceTree = "<group>"; };
 		2E02B86626EBA05C00CA3435 /* StreamWithScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamWithScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E02B86926EBA05C00CA3435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E02B86B26EBA05C00CA3435 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		2E02B87226EBA05D00CA3435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E02B87526EBA05D00CA3435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E02B87726EBA05D00CA3435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C1CEE72EFAF84A52AD2987E /* Pods_StreamWithScheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamWithScheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		695588606220B189CB928746 /* Pods-StreamWithScheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamWithScheduler.release.xcconfig"; path = "Target Support Files/Pods-StreamWithScheduler/Pods-StreamWithScheduler.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C615B0E92A987045FBF7632 /* Pods_StreamWithScheduler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2E02B86826EBA05C00CA3435 /* StreamWithScheduler */,
 				2E02B86726EBA05C00CA3435 /* Products */,
+				EDA52AD4D9321A6CF2CA1E20 /* Pods */,
+				7290B33B26D9C3EC15AE5455 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = StreamWithScheduler;
 			sourceTree = "<group>";
 		};
+		7290B33B26D9C3EC15AE5455 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C1CEE72EFAF84A52AD2987E /* Pods_StreamWithScheduler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDA52AD4D9321A6CF2CA1E20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19C6817ABF6201C70D15ED32 /* Pods-StreamWithScheduler.debug.xcconfig */,
+				695588606220B189CB928746 /* Pods-StreamWithScheduler.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E02B87A26EBA05D00CA3435 /* Build configuration list for PBXNativeTarget "StreamWithScheduler" */;
 			buildPhases = (
+				CC1232A5FF18AFBBF962D213 /* [CP] Check Pods Manifest.lock */,
 				2E02B86226EBA05C00CA3435 /* Sources */,
 				2E02B86326EBA05C00CA3435 /* Frameworks */,
 				2E02B86426EBA05C00CA3435 /* Resources */,
+				8A7BD274A21F3D6E210452DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A7BD274A21F3D6E210452DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StreamWithScheduler/Pods-StreamWithScheduler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StreamWithScheduler/Pods-StreamWithScheduler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StreamWithScheduler/Pods-StreamWithScheduler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC1232A5FF18AFBBF962D213 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StreamWithScheduler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E02B86226EBA05C00CA3435 /* Sources */ = {
@@ -283,12 +352,14 @@
 		};
 		2E02B87B26EBA05D00CA3435 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19C6817ABF6201C70D15ED32 /* Pods-StreamWithScheduler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2D5P4CHD8;
 				INFOPLIST_FILE = StreamWithScheduler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +367,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Mingu.StreamWithScheduler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2E02B87C26EBA05D00CA3435 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 695588606220B189CB928746 /* Pods-StreamWithScheduler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X2D5P4CHD8;
 				INFOPLIST_FILE = StreamWithScheduler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +388,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Mingu.StreamWithScheduler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
