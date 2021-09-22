@@ -16,7 +16,6 @@
 ## 📖 스터디 진행 커리큘럼 ( Alpha )
 
 아직 구체적인 계획이 명확하게 정해진것은 아니며, 아래에 적힌 계획은 추후 변경 될 수 있습니다. 
-
 1. 반응형 프로그래밍 / ReactiveX 소개
     - Observer Pattern 에 대하여
     - 반응형 프로그래밍에 대한 소개
@@ -30,22 +29,40 @@
 3. Disposable / RxJava Observable의 종류 및 특징 
     - Disposable에 대해서
     - Single / Completable / Flowable / Maybe에 대한 소개 및 각 차이점 설명
-4. 다양한 연산자
-    - filter / map / flatMap / switchMap ...
-5. RxBinding / 결합 연산자 
-    - merge / concat / combineLatest / zip ...
-6. RxJava Threading / Scheduler
+4. Subscribe / Consumer, Action interface 에 대해서
+    - Consumer, Action Interface
+    - Subscribe operator
+5. RxJava Threading / Scheduler
     - Scheduler란
     - RxJava에서 사용하고있는 Scheduler의 종류
-    - Thread handling
+    - observeOn / subscribeOn
     - MultiThreading
-7. 에러 처리 연산자
-    - retry / retryWhen / onErrorReturn ...
-8. Subject에 대해서 
+6. Subject에 대해서
     - Subject의 특징
     - Cold Publisher / Hot Publisher의 차이점
     - 미리 만들어진 Subject들의 종류별 특징 ( PublishSubject / BehaviorSubejct / AsyncSubject ... )
-9. Custom Subject / Observable 만들어서 기존의 콜백을 Stream으로 변환하기
+7. 다양한 연산자 - 생성
+    - create / just / defer / interval / ...
+8. 다양한 연산자 - 흐름 제어 
+    - filter / map / flatMap / switchMap
+9. 다양한 연산자 - 결합 / RxBinding
+    - RxBinding
+    - merge / concat / combineLatest / zip ...
+10. 다양한 연산자 - 에러 처리 
+    - retry / retryWhen / onErrorReturn ...
+11. Reactive Stream / RxJava
+    - Observable vs Flowable
+    - Subscription
+    - Publisher / Subscriber
+12. MultiCasting / UniCasting
+    - Subject
+    - Connectable Observable
+    - publish / refCount / share
+13. RxJava를 지원하는 Android 라이브러리를 사용 해보기
+    - Retrofit과 연동 해보기
+    - Room과 연동 해보기
+14. Custom Subject / Observable 만들어서 기존의 콜백을 Stream으로 변환하기
+    - RxBinding 구현체 살펴보기
 
 ## 📖 저에 대한 소개
 
