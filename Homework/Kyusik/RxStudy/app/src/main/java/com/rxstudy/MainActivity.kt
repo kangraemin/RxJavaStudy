@@ -179,6 +179,7 @@ class MainActivity : AppCompatActivity() {
         )
         behaviorSubject.onNext(startTaskToGetFirstString())
         behaviorSubject.onNext(startTaskToGetSecondString())
+        behaviorSubject.onError(Throwable("Throw Error"))
 
         threadLog("--------구분선--------")
 
@@ -190,8 +191,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         behaviorSubject.onNext(startTaskToGetThirdString())
-        behaviorSubject.onError(Throwable("Throw Error"))
-//        behaviorSubject.onComplete()
+        behaviorSubject.onComplete()
     }
 
     private fun runAsyncSubjectEventExample() {
