@@ -26,4 +26,5 @@
     <string name="seven_week_example_behavior_subject_event">BehaviorSubject Event</string>
     <string name="seven_week_example_async_subject_event">AsyncSubject Event</string>
     <string name="seven_week_example_replay_subject_event">ReplaySubject Event</string>
+    <string name="eight_week_example_title">생성 operator 소개</string>
 </resources>
