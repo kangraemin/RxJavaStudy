@@ -3,13 +3,15 @@
     package="com.example.rxjavalecture">
 
     <application
+        android:name=".CustomApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".operator.create.CreateOperatorExampleActivity"></activity>
+        <activity android:name=".operator.transform.TransformOperatorExampleActivity"></activity>
+        <activity android:name=".operator.create.CreateOperatorExampleActivity" />
         <activity android:name=".subject.SubjectExampleActivity" />
         <activity android:name=".scheduler.SchedulerExampleActivity" />
         <activity android:name=".streamimplementation.StreamImplementationExampleActivity" />
