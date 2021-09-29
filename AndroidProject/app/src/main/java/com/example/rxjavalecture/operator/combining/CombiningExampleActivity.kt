@@ -30,6 +30,10 @@ class CombiningExampleActivity : AppCompatActivity() {
             runConcatExample()
         }
 
+        binding.btnConcatEager.setOnClickListener {
+            runConcatEagerExample()
+        }
+
         binding.btnZip.setOnClickListener {
             runZipExample()
         }
@@ -41,11 +45,13 @@ class CombiningExampleActivity : AppCompatActivity() {
 
     private val integerInterval = Observable
         .interval(1000, TimeUnit.MILLISECONDS)
+        .doOnNext { timeStampedLog("integer 데이터 $it 발행 되었음 !!") }
         .takeWhile { it < 10 }
 
     private val stringInterval = Observable
         .interval(1500, TimeUnit.MILLISECONDS)
         .takeWhile { it < 10 }
+        .doOnNext { timeStampedLog("String 데이터 $it 발행 되었음 !!") }
         .map { "$it 번쨰 String 데이터" }
 
     private fun runMergeExample() {
@@ -72,6 +78,19 @@ class CombiningExampleActivity : AppCompatActivity() {
                         integerInterval,
                         stringInterval
                     )
+                    .subscribe({
+                        timeStampedLog(it)
+                    }, { it.printStackTrace() })
+            )
+    }
+
+    private fun runConcatEagerExample() {
+        startedTime = System.currentTimeMillis()
+        val observableList = listOf(integerInterval, stringInterval)
+        compositeDisposable
+            .add(
+                Observable
+                    .concatEager(observableList)
                     .subscribe({
                         timeStampedLog(it)
                     }, { it.printStackTrace() })
