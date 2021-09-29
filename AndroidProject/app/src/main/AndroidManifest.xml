@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".rxbinding.RxBindingExampleActivity"></activity>
+        <activity android:name=".operator.combining.CombiningExampleActivity"></activity>
+        <activity android:name=".rxbinding.RxBindingExampleActivity" />
         <activity android:name=".operator.transform.TransformOperatorExampleActivity" />
         <activity android:name=".operator.create.CreateOperatorExampleActivity" />
         <activity android:name=".subject.SubjectExampleActivity" />

@@ -29,4 +29,5 @@
     <string name="eight_week_example_title">생성 operator 소개</string>
     <string name="nine_week_example_title">변형 operator 소개</string>
     <string name="ten_week_example_title">RxBinding 소개</string>
+    <string name="eleven_week_title">결합 operator 소개</string>
 </resources>
