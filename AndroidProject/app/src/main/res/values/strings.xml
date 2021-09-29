@@ -28,4 +28,5 @@
     <string name="seven_week_example_replay_subject_event">ReplaySubject Event</string>
     <string name="eight_week_example_title">생성 operator 소개</string>
     <string name="nine_week_example_title">변형 operator 소개</string>
+    <string name="ten_week_example_title">RxBinding 소개</string>
 </resources>

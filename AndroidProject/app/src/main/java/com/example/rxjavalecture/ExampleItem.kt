@@ -8,6 +8,7 @@ import com.example.rxjavalecture.observerpattern.noneobserverpattern.NoneObserve
 import com.example.rxjavalecture.observerpattern.oberserverpattern.ObserverPatternActivity
 import com.example.rxjavalecture.operator.create.CreateOperatorExampleActivity
 import com.example.rxjavalecture.operator.transform.TransformOperatorExampleActivity
+import com.example.rxjavalecture.rxbinding.RxBindingExampleActivity
 import com.example.rxjavalecture.scheduler.SchedulerExampleActivity
 import com.example.rxjavalecture.streamimplementation.StreamImplementationExampleActivity
 import com.example.rxjavalecture.subject.SubjectExampleActivity
@@ -21,5 +22,6 @@ enum class ExampleItem(val destinationClass: Class<out Activity>, @StringRes val
     SCHEDULER_EXAMPLE(SchedulerExampleActivity::class.java, R.string.six_week_scheduler),
     SUBJECT_EXAMPLE(SubjectExampleActivity::class.java, R.string.seven_week_example_title),
     CREATE_OPERATOR_EXAMPLE(CreateOperatorExampleActivity::class.java, R.string.eight_week_example_title),
-    TRANSFORM_OPERATOR_EXAMPLE(TransformOperatorExampleActivity::class.java, R.string.nine_week_example_title);
+    TRANSFORM_OPERATOR_EXAMPLE(TransformOperatorExampleActivity::class.java, R.string.nine_week_example_title),
+    RX_BINDING_EXAMPLE(RxBindingExampleActivity::class.java, R.string.ten_week_example_title);
 }
