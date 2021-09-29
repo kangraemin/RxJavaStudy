@@ -1,8 +1,7 @@
 package com.example.rxjavalecture.rxbinding
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.rxjavalecture.R
 import com.example.rxjavalecture.databinding.ActivityRxBindingExampleBinding
@@ -45,8 +44,6 @@ class RxBindingExampleActivity : AppCompatActivity() {
                         binding.tvClickTimeThrottle.text = String.format("클릭된 횟수 : %d", ++throttleClickedCount)
                     }, { it.printStackTrace() })
             )
-
-        EditText
 
         compositeDisposable
             .add(
