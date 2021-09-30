@@ -1,7 +1,7 @@
 //
 //  SubjectViewController.swift
 //  RxStudy
-//
+//  RxStudy [6주차 과제] : Subject 발행, 구독 해보기
 //  Created by Mingu Seo on 2021/09/16.
 //
 
@@ -12,7 +12,6 @@ import RxCocoa
 import NSObject_Rx
 
 class SubjectViewController: UIViewController {
-    ///TODO : RxCocoa사용해서 버튼 액션 적용해보기
     
     override func viewDidLoad() {
         super.viewDidLoad()
