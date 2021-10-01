@@ -12,12 +12,13 @@ enum RxStudyCategories: String {
     case ObserverPattern = "ObserverPattern"
     case StreamWithScheduler = "StreamWithScheduler"
     case Subject = "Subject"
+    case DataEmittOperators = "DataEmittOperators"
 }
 
 class ControlTableViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    let categories = [RxStudyCategories.ObserverPattern, RxStudyCategories.StreamWithScheduler, RxStudyCategories.Subject]
+    let categories = [RxStudyCategories.ObserverPattern, RxStudyCategories.StreamWithScheduler, RxStudyCategories.Subject, RxStudyCategories.DataEmittOperators]
 }
 
 extension ControlTableViewController: UITableViewDelegate, UITableViewDataSource {
@@ -52,6 +53,11 @@ extension ControlTableViewController: UITableViewDelegate, UITableViewDataSource
             }
             self.navigationController?.pushViewController(viewController, animated: true)
         
+        case .DataEmittOperators:
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "DataEmittOperators") as? DataEmittOperatorsViewController else {
+                fatalError()
+            }
+            self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
 }

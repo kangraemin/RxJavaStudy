@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sMO-Jh-FGD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sMO-Jh-FGD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -88,7 +88,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="fME-ru-Mgo" style="IBUITableViewCellStyleDefault" id="yjf-YO-62m">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yjf-YO-62m" id="dOC-tu-bqa">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -124,9 +124,6 @@
                     <navigationItem key="navigationItem" title="RxStudy" id="ILg-98-Z3Q"/>
                     <connections>
                         <outlet property="tableView" destination="yLT-vA-Vka" id="OOk-F2-FRC"/>
-                        <segue destination="zUI-7g-BK2" kind="show" id="CdO-9W-JrE"/>
-                        <segue destination="B3e-Ne-uYs" kind="show" id="ntB-mG-wt0"/>
-                        <segue destination="IZZ-Fi-nUx" kind="show" id="Wcf-Fz-bWS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mJW-wX-yjN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -292,6 +289,143 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dib-jD-XAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="883" y="1445"/>
+        </scene>
+        <!--Data Emitt Operators View Controller-->
+        <scene sceneID="0FO-KI-nb6">
+            <objects>
+                <viewController storyboardIdentifier="DataEmittOperators" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UXE-ob-Bdi" customClass="DataEmittOperatorsViewController" customModule="RxStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DSm-c8-EGJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="55l-3V-TFH">
+                                <rect key="frame" x="0.0" y="178" width="414" height="540"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvN-wE-OQY">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3jt-Mc-mkM"/>
+                                        </constraints>
+                                        <state key="normal" title="Create"/>
+                                        <connections>
+                                            <action selector="btnCreate:" destination="UXE-ob-Bdi" eventType="touchUpInside" id="oXl-bV-ite"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3V0-ct-C7d">
+                                        <rect key="frame" x="0.0" y="70" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Y1U-zw-4vy"/>
+                                        </constraints>
+                                        <state key="normal" title="Just"/>
+                                        <connections>
+                                            <action selector="btnJust:" destination="UXE-ob-Bdi" eventType="touchUpInside" id="hwb-xS-usL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iM5-9O-Nwa">
+                                        <rect key="frame" x="0.0" y="140" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="diS-X8-NRA"/>
+                                        </constraints>
+                                        <state key="normal" title="Defer"/>
+                                        <connections>
+                                            <action selector="btnDefer:" destination="UXE-ob-Bdi" eventType="touchUpInside" id="xOn-68-UWW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10Q-Al-Kz0">
+                                        <rect key="frame" x="0.0" y="210" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ThB-yS-DmJ"/>
+                                        </constraints>
+                                        <state key="normal" title="FromCallable"/>
+                                        <connections>
+                                            <action selector="btnFromCallable:" destination="UXE-ob-Bdi" eventType="touchUpInside" id="4fW-Q2-vBl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jeb-wP-fRC">
+                                        <rect key="frame" x="0.0" y="280" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="UQf-xA-vTv"/>
+                                        </constraints>
+                                        <state key="normal" title="FromIterable"/>
+                                        <connections>
+                                            <action selector="btnFromIterable:" destination="UXE-ob-Bdi" eventType="touchUpInside" id="BIo-9z-LA6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3V-mE-d3d">
+                                        <rect key="frame" x="0.0" y="350" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ofm-GT-SSd"/>
+                                        </constraints>
+                                        <state key="normal" title="Interval"/>
+                                        <connections>
+                                            <action selector="btnInterval:" destination="UXE-ob-Bdi" eventType="touchUpInside" id="l1y-fZ-jZa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8s-9M-YGz">
+                                        <rect key="frame" x="0.0" y="420" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="vUd-Oy-NCC"/>
+                                        </constraints>
+                                        <state key="normal" title="Timer"/>
+                                        <connections>
+                                            <action selector="btnTimer:" destination="UXE-ob-Bdi" eventType="touchUpInside" id="0F3-UR-f9O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6r-zs-XHZ">
+                                        <rect key="frame" x="0.0" y="490" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="UNG-zm-CFv"/>
+                                        </constraints>
+                                        <state key="normal" title="Range"/>
+                                        <connections>
+                                            <action selector="btnRange:" destination="UXE-ob-Bdi" eventType="touchUpInside" id="2Pw-WS-YVf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Jeb-wP-fRC" secondAttribute="trailing" id="9qH-28-eni"/>
+                                    <constraint firstItem="MvN-wE-OQY" firstAttribute="leading" secondItem="55l-3V-TFH" secondAttribute="leading" id="Gqq-D5-zV4"/>
+                                    <constraint firstAttribute="trailing" secondItem="z8s-9M-YGz" secondAttribute="trailing" id="Hv8-rL-tnY"/>
+                                    <constraint firstAttribute="trailing" secondItem="MvN-wE-OQY" secondAttribute="trailing" id="IV5-yx-F1Y"/>
+                                    <constraint firstItem="Jeb-wP-fRC" firstAttribute="leading" secondItem="55l-3V-TFH" secondAttribute="leading" id="MYp-JQ-v99"/>
+                                    <constraint firstItem="M3V-mE-d3d" firstAttribute="leading" secondItem="55l-3V-TFH" secondAttribute="leading" id="N6Y-CJ-ctI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z6r-zs-XHZ" secondAttribute="trailing" id="Nbr-ez-h7A"/>
+                                    <constraint firstAttribute="trailing" secondItem="M3V-mE-d3d" secondAttribute="trailing" id="dTI-gh-E4L"/>
+                                    <constraint firstItem="iM5-9O-Nwa" firstAttribute="leading" secondItem="55l-3V-TFH" secondAttribute="leading" id="dnU-pa-FVi"/>
+                                    <constraint firstItem="3V0-ct-C7d" firstAttribute="leading" secondItem="55l-3V-TFH" secondAttribute="leading" id="nJG-W7-sAY"/>
+                                    <constraint firstItem="Z6r-zs-XHZ" firstAttribute="leading" secondItem="55l-3V-TFH" secondAttribute="leading" id="p3A-Bc-aJ8"/>
+                                    <constraint firstAttribute="trailing" secondItem="3V0-ct-C7d" secondAttribute="trailing" id="sZ6-5y-y4Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="10Q-Al-Kz0" secondAttribute="trailing" id="sxR-KF-au3"/>
+                                    <constraint firstItem="10Q-Al-Kz0" firstAttribute="leading" secondItem="55l-3V-TFH" secondAttribute="leading" id="tST-Xl-ade"/>
+                                    <constraint firstAttribute="trailing" secondItem="iM5-9O-Nwa" secondAttribute="trailing" id="whe-Wr-ahG"/>
+                                    <constraint firstItem="z8s-9M-YGz" firstAttribute="leading" secondItem="55l-3V-TFH" secondAttribute="leading" id="zrw-ST-uDm"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8ic-Gs-WHJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="55l-3V-TFH" firstAttribute="leading" secondItem="8ic-Gs-WHJ" secondAttribute="leading" id="Rq1-w3-hUp"/>
+                            <constraint firstItem="55l-3V-TFH" firstAttribute="centerY" secondItem="DSm-c8-EGJ" secondAttribute="centerY" id="Vyc-hO-qVC"/>
+                            <constraint firstItem="55l-3V-TFH" firstAttribute="centerX" secondItem="DSm-c8-EGJ" secondAttribute="centerX" id="hhf-X1-5Y7"/>
+                            <constraint firstItem="8ic-Gs-WHJ" firstAttribute="trailing" secondItem="55l-3V-TFH" secondAttribute="trailing" id="i59-Ao-jJg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iTa-2c-k6c"/>
+                    <connections>
+                        <outlet property="btnCreate" destination="MvN-wE-OQY" id="NS3-da-xPa"/>
+                        <outlet property="btnDefer" destination="iM5-9O-Nwa" id="eNx-OW-Oa1"/>
+                        <outlet property="btnFromCallable" destination="10Q-Al-Kz0" id="kUn-yW-Wjt"/>
+                        <outlet property="btnFromIterable" destination="Jeb-wP-fRC" id="dTR-Ij-oVo"/>
+                        <outlet property="btnInterval" destination="M3V-mE-d3d" id="GTs-u6-VfZ"/>
+                        <outlet property="btnJust" destination="3V0-ct-C7d" id="N3A-2s-cWt"/>
+                        <outlet property="btnRange" destination="Z6r-zs-XHZ" id="1Px-iz-2UY"/>
+                        <outlet property="btnTimer" destination="z8s-9M-YGz" id="Vny-eh-P98"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEO-9h-SHW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887" y="2117"/>
         </scene>
     </scenes>
     <resources>

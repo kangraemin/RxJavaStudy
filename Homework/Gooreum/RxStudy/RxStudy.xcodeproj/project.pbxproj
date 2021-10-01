@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1BB8292706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1BB8282706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift */; };
+		2E1BB82B2706F1E2005FC0D0 /* ControlOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1BB82A2706F1E2005FC0D0 /* ControlOperatorsViewController.swift */; };
 		2EC9F19726D75D5C00A2F96B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9F19626D75D5C00A2F96B /* AppDelegate.swift */; };
 		2EC9F19926D75D5C00A2F96B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9F19826D75D5C00A2F96B /* SceneDelegate.swift */; };
 		2EC9F19B26D75D5C00A2F96B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9F19A26D75D5C00A2F96B /* MainViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E1BB8282706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEmittOperatorsViewController.swift; sourceTree = "<group>"; };
+		2E1BB82A2706F1E2005FC0D0 /* ControlOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlOperatorsViewController.swift; sourceTree = "<group>"; };
 		2EC9F19326D75D5C00A2F96B /* RxStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC9F19626D75D5C00A2F96B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EC9F19826D75D5C00A2F96B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E1BB8272706F186005FC0D0 /* Operator */ = {
+			isa = PBXGroup;
+			children = (
+				2E1BB8282706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift */,
+				2E1BB82A2706F1E2005FC0D0 /* ControlOperatorsViewController.swift */,
+			);
+			path = Operator;
+			sourceTree = "<group>";
+		};
 		2E84F94926F312960026951C /* StreamWithScheduler */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				2EEEFFA326F320A60039EBE8 /* Common */,
-				2E84F94A26F312A10026951C /* Subject */,
-				2E84F94926F312960026951C /* StreamWithScheduler */,
 				2EEEFF9A26F313980039EBE8 /* ObserverPattern */,
+				2E84F94926F312960026951C /* StreamWithScheduler */,
+				2E84F94A26F312A10026951C /* Subject */,
+				2E1BB8272706F186005FC0D0 /* Operator */,
 				2EC9F19C26D75D5C00A2F96B /* Main.storyboard */,
 				2EC9F19626D75D5C00A2F96B /* AppDelegate.swift */,
 				2EC9F19826D75D5C00A2F96B /* SceneDelegate.swift */,
@@ -260,6 +274,8 @@
 			files = (
 				2EC9F19B26D75D5C00A2F96B /* MainViewController.swift in Sources */,
 				2EEEFFA526F320C50039EBE8 /* SubjectViewController.swift in Sources */,
+				2E1BB82B2706F1E2005FC0D0 /* ControlOperatorsViewController.swift in Sources */,
+				2E1BB8292706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift in Sources */,
 				2EC9F19726D75D5C00A2F96B /* AppDelegate.swift in Sources */,
 				2EC9F1B126D7610900A2F96B /* Subject.swift in Sources */,
 				2EC9F19926D75D5C00A2F96B /* SceneDelegate.swift in Sources */,
