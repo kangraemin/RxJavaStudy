@@ -9,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RxStudy">
+        <activity
+            android:name=".ObserverPatternActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StreamExampleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SubjectExampleActivity"
+            android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
