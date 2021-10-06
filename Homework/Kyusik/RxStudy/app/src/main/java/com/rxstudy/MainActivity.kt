@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.rxstudy.databinding.ActivityMainBinding
+import com.rxstudy.operator.TransformOperatorExampleActivity
+import com.rxstudy.operator.CreateOperatorExampleActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var  binding: ActivityMainBinding
@@ -23,6 +25,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.btSubject.setOnClickListener {
             this.startActivity(Intent(this, SubjectExampleActivity::class.java))
+        }
+
+        binding.btCreateOperator.setOnClickListener {
+            this.startActivity(Intent(this, CreateOperatorExampleActivity::class.java))
+        }
+
+        binding.btTransformOperator.setOnClickListener {
+            this.startActivity(Intent(this, TransformOperatorExampleActivity::class.java))
         }
     }
 }

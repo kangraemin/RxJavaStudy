@@ -6,44 +6,56 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="20dp"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        android:padding="20dp"
+        tools:context=".operator.CreateOperatorExampleActivity">
 
         <Button
-            android:id="@+id/bt_observer_pattern"
+            android:id="@+id/bt_create"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Observer Pattern" />
+            android:text="Create Example" />
 
         <Button
-            android:id="@+id/bt_stream"
+            android:id="@+id/bt_just"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Stream Example" />
+            android:text="Just Example" />
 
         <Button
-            android:id="@+id/bt_subject"
+            android:id="@+id/bt_defer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Subject Example" />
+            android:text="Defer Example" />
 
         <Button
-            android:id="@+id/bt_create_operator"
+            android:id="@+id/bt_from_callable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Create Operator Example" />
+            android:text="FromCallable Example" />
 
         <Button
-            android:id="@+id/bt_transform_operator"
+            android:id="@+id/bt_iterable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Transform Operator Example" />
+            android:text="FromIterable Example" />
 
         <Button
-            android:id="@+id/bt_combine_operator"
+            android:id="@+id/bt_interval"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Combine Operator Example" />
+            android:text="Interval Example" />
+
+        <Button
+            android:id="@+id/bt_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timer Example" />
+
+        <Button
+            android:id="@+id/bt_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Range Example" />
     </LinearLayout>
 </layout>
