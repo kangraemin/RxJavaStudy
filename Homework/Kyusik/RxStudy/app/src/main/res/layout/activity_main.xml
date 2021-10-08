@@ -45,5 +45,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Combine Operator Example" />
+
+        <Button
+            android:id="@+id/bt_rx_binding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rx Binding Example" />
     </LinearLayout>
 </layout>

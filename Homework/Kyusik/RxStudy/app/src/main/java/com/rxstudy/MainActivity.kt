@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.rxstudy.databinding.ActivityMainBinding
+import com.rxstudy.operator.CombiningExampleActivity
 import com.rxstudy.operator.TransformOperatorExampleActivity
 import com.rxstudy.operator.CreateOperatorExampleActivity
 
@@ -33,6 +34,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.btTransformOperator.setOnClickListener {
             this.startActivity(Intent(this, TransformOperatorExampleActivity::class.java))
+        }
+
+        binding.btCombineOperator.setOnClickListener {
+            this.startActivity(Intent(this, CombiningExampleActivity::class.java))
+        }
+
+        binding.btRxBinding.setOnClickListener {
+            this.startActivity(Intent(this, RxBindingExampleActivity::class.java))
         }
     }
 }
