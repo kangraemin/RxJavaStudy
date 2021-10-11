@@ -3,8 +3,8 @@
     <string name="percent">퍼센트 :</string>
     <string name="percent_seek_bar">퍼센트 조절 :</string>
     <string name="observer_pattern">옵저버 패턴</string>
+    <string name="rx_binding_example">RxBinding 로그인 예제</string>
     <string name="observable_subscribe_scheduler">데이터 발행 / 구독 / Scheduler</string>
-    <string name="subject_example">Subject 발행, 구독</string>
     <string name="enter_the_letters">글자를 입력하세요</string>
     <string name="observable">observable</string>
     <string name="flowable">flowable</string>
@@ -12,8 +12,7 @@
     <string name="maybe">maybe</string>
     <string name="completable">completable</string>
     <string name="blank_text">빈값</string>
-    <string name="publish_subject_event">PublishSubject</string>
-    <string name="behavior_subject_event">BehaviorSubject</string>
-    <string name="async_subject_event">AsyncSubject</string>
-    <string name="replay_subject_event">ReplaySubject</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
 </resources>

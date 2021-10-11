@@ -21,6 +21,7 @@
         <activity android:name=".weekFive.RxJavaStreamActivity" />
         <activity android:name=".observerPattern.ObserverActivity" />
         <activity android:name=".weekSix.SubjectExampleActivity" />
+        <activity android:name=".weekNine.RxBindingLoginActivity" />
     </application>
 
 </manifest>
