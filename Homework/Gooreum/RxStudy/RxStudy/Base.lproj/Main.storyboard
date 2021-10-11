@@ -427,6 +427,99 @@
             </objects>
             <point key="canvasLocation" x="887" y="2117"/>
         </scene>
+        <!--Transform Operators View Controller-->
+        <scene sceneID="N3H-z5-MWa">
+            <objects>
+                <viewController storyboardIdentifier="TransformOperators" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X8D-04-9Bx" customClass="TransformOperatorsViewController" customModule="RxStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hcr-vR-1UY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JG3-QP-nkQ">
+                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbO-iZ-PoT">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="FkK-ya-95g"/>
+                                        </constraints>
+                                        <state key="normal" title="Map"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wH-0k-t2g">
+                                        <rect key="frame" x="0.0" y="70" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="iTp-tX-ovR"/>
+                                        </constraints>
+                                        <state key="normal" title="FlatMap"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2b-c8-8p7">
+                                        <rect key="frame" x="0.0" y="140" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hQc-aO-Bhc"/>
+                                        </constraints>
+                                        <state key="normal" title="SwitchMap"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTA-Mx-ghI">
+                                        <rect key="frame" x="0.0" y="210" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ZYQ-kD-Fjl"/>
+                                        </constraints>
+                                        <state key="normal" title="Debounce"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCB-4R-F6t">
+                                        <rect key="frame" x="0.0" y="280" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="VFL-eX-iEp"/>
+                                        </constraints>
+                                        <state key="normal" title="Throttle"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3a-eZ-c0N">
+                                        <rect key="frame" x="0.0" y="350" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jvK-tJ-z5u"/>
+                                        </constraints>
+                                        <state key="normal" title="Sample"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sCB-4R-F6t" secondAttribute="trailing" id="5nt-7z-vPs"/>
+                                    <constraint firstItem="b2b-c8-8p7" firstAttribute="leading" secondItem="JG3-QP-nkQ" secondAttribute="leading" id="9w7-3M-aX3"/>
+                                    <constraint firstAttribute="trailing" secondItem="B3a-eZ-c0N" secondAttribute="trailing" id="Aq5-HB-Owz"/>
+                                    <constraint firstAttribute="trailing" secondItem="5wH-0k-t2g" secondAttribute="trailing" id="T4A-SL-cAx"/>
+                                    <constraint firstItem="vbO-iZ-PoT" firstAttribute="leading" secondItem="JG3-QP-nkQ" secondAttribute="leading" id="ch3-qd-Tm3"/>
+                                    <constraint firstAttribute="trailing" secondItem="vbO-iZ-PoT" secondAttribute="trailing" id="f9B-Yi-3NA"/>
+                                    <constraint firstItem="sCB-4R-F6t" firstAttribute="leading" secondItem="JG3-QP-nkQ" secondAttribute="leading" id="fXn-05-J2q"/>
+                                    <constraint firstItem="B3a-eZ-c0N" firstAttribute="leading" secondItem="JG3-QP-nkQ" secondAttribute="leading" id="mNW-rG-PWU"/>
+                                    <constraint firstItem="WTA-Mx-ghI" firstAttribute="leading" secondItem="JG3-QP-nkQ" secondAttribute="leading" id="x1G-6S-U6W"/>
+                                    <constraint firstItem="5wH-0k-t2g" firstAttribute="leading" secondItem="JG3-QP-nkQ" secondAttribute="leading" id="xA3-XQ-nm4"/>
+                                    <constraint firstAttribute="trailing" secondItem="WTA-Mx-ghI" secondAttribute="trailing" id="yAu-8x-dvm"/>
+                                    <constraint firstAttribute="trailing" secondItem="b2b-c8-8p7" secondAttribute="trailing" id="zIA-pV-T0O"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Get-7b-ola"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Get-7b-ola" firstAttribute="trailing" secondItem="JG3-QP-nkQ" secondAttribute="trailing" id="3hW-SQ-boU"/>
+                            <constraint firstItem="JG3-QP-nkQ" firstAttribute="leading" secondItem="Get-7b-ola" secondAttribute="leading" id="Qe5-PS-Ox9"/>
+                            <constraint firstItem="JG3-QP-nkQ" firstAttribute="centerX" secondItem="hcr-vR-1UY" secondAttribute="centerX" id="hS2-eo-mU6"/>
+                            <constraint firstItem="JG3-QP-nkQ" firstAttribute="centerY" secondItem="hcr-vR-1UY" secondAttribute="centerY" id="hgf-IZ-is1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nOn-VH-Bn0"/>
+                    <connections>
+                        <outlet property="btnDebounce" destination="WTA-Mx-ghI" id="sJA-tw-EZ9"/>
+                        <outlet property="btnFlatMap" destination="5wH-0k-t2g" id="M4p-Hd-fRS"/>
+                        <outlet property="btnMap" destination="vbO-iZ-PoT" id="qva-XO-8ud"/>
+                        <outlet property="btnSample" destination="B3a-eZ-c0N" id="Zk1-we-CHk"/>
+                        <outlet property="btnSwitchMap" destination="b2b-c8-8p7" id="gzS-8Y-LaM"/>
+                        <outlet property="btnThrottle" destination="sCB-4R-F6t" id="Fgt-IN-KXF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Q2-dc-Or6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1662" y="2117"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

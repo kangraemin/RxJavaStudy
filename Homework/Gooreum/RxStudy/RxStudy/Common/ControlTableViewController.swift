@@ -13,12 +13,13 @@ enum RxStudyCategories: String {
     case StreamWithScheduler = "StreamWithScheduler"
     case Subject = "Subject"
     case DataEmittOperators = "DataEmittOperators"
+    case TransformOperators = "TransformOperators"
 }
 
 class ControlTableViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    let categories = [RxStudyCategories.ObserverPattern, RxStudyCategories.StreamWithScheduler, RxStudyCategories.Subject, RxStudyCategories.DataEmittOperators]
+    let categories = [RxStudyCategories.ObserverPattern, RxStudyCategories.StreamWithScheduler, RxStudyCategories.Subject, RxStudyCategories.DataEmittOperators, RxStudyCategories.TransformOperators]
 }
 
 extension ControlTableViewController: UITableViewDelegate, UITableViewDataSource {
@@ -55,6 +56,12 @@ extension ControlTableViewController: UITableViewDelegate, UITableViewDataSource
         
         case .DataEmittOperators:
             guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "DataEmittOperators") as? DataEmittOperatorsViewController else {
+                fatalError()
+            }
+            self.navigationController?.pushViewController(viewController, animated: true)
+            
+        case .TransformOperators:
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "TransformOperators") as? TransformOperatorsViewController else {
                 fatalError()
             }
             self.navigationController?.pushViewController(viewController, animated: true)

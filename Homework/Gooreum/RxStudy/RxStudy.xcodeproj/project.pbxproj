@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2E1BB8292706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1BB8282706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift */; };
-		2E1BB82B2706F1E2005FC0D0 /* ControlOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1BB82A2706F1E2005FC0D0 /* ControlOperatorsViewController.swift */; };
+		2E1BB82B2706F1E2005FC0D0 /* TransformOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1BB82A2706F1E2005FC0D0 /* TransformOperatorsViewController.swift */; };
+		2E830B8D2712F14900DBC5AE /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E830B8C2712F14900DBC5AE /* Extension+Date.swift */; };
 		2EC9F19726D75D5C00A2F96B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9F19626D75D5C00A2F96B /* AppDelegate.swift */; };
 		2EC9F19926D75D5C00A2F96B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9F19826D75D5C00A2F96B /* SceneDelegate.swift */; };
 		2EC9F19B26D75D5C00A2F96B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9F19A26D75D5C00A2F96B /* MainViewController.swift */; };
@@ -27,7 +28,8 @@
 
 /* Begin PBXFileReference section */
 		2E1BB8282706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEmittOperatorsViewController.swift; sourceTree = "<group>"; };
-		2E1BB82A2706F1E2005FC0D0 /* ControlOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlOperatorsViewController.swift; sourceTree = "<group>"; };
+		2E1BB82A2706F1E2005FC0D0 /* TransformOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformOperatorsViewController.swift; sourceTree = "<group>"; };
+		2E830B8C2712F14900DBC5AE /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		2EC9F19326D75D5C00A2F96B /* RxStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC9F19626D75D5C00A2F96B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EC9F19826D75D5C00A2F96B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,9 +66,17 @@
 			isa = PBXGroup;
 			children = (
 				2E1BB8282706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift */,
-				2E1BB82A2706F1E2005FC0D0 /* ControlOperatorsViewController.swift */,
+				2E1BB82A2706F1E2005FC0D0 /* TransformOperatorsViewController.swift */,
 			);
 			path = Operator;
+			sourceTree = "<group>";
+		};
+		2E830B8B2712F13D00DBC5AE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2E830B8C2712F14900DBC5AE /* Extension+Date.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		2E84F94926F312960026951C /* StreamWithScheduler */ = {
@@ -106,6 +116,7 @@
 		2EC9F19526D75D5C00A2F96B /* RxStudy */ = {
 			isa = PBXGroup;
 			children = (
+				2E830B8B2712F13D00DBC5AE /* Extension */,
 				2EEEFFA326F320A60039EBE8 /* Common */,
 				2EEEFF9A26F313980039EBE8 /* ObserverPattern */,
 				2E84F94926F312960026951C /* StreamWithScheduler */,
@@ -274,7 +285,7 @@
 			files = (
 				2EC9F19B26D75D5C00A2F96B /* MainViewController.swift in Sources */,
 				2EEEFFA526F320C50039EBE8 /* SubjectViewController.swift in Sources */,
-				2E1BB82B2706F1E2005FC0D0 /* ControlOperatorsViewController.swift in Sources */,
+				2E1BB82B2706F1E2005FC0D0 /* TransformOperatorsViewController.swift in Sources */,
 				2E1BB8292706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift in Sources */,
 				2EC9F19726D75D5C00A2F96B /* AppDelegate.swift in Sources */,
 				2EC9F1B126D7610900A2F96B /* Subject.swift in Sources */,
@@ -284,6 +295,7 @@
 				2EC9F1AB26D760E700A2F96B /* CustomTextField.swift in Sources */,
 				2EEEFF9C26F3150E0039EBE8 /* ControlTableViewController.swift in Sources */,
 				2EC9F1AF26D760FF00A2F96B /* ObserverProtocol.swift in Sources */,
+				2E830B8D2712F14900DBC5AE /* Extension+Date.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
