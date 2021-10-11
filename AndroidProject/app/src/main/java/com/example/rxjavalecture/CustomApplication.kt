@@ -9,7 +9,9 @@ class CustomApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         RxJavaPlugins.setErrorHandler { e: Throwable ->
-            (e as? UndeliverableException)?.printStackTrace()
+            if (e is UndeliverableException) {
+                return@setErrorHandler
+            }
         }
     }
 }
