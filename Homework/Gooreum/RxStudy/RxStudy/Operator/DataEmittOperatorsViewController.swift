@@ -24,8 +24,11 @@ class DataEmittOperatorsViewController: UIViewController {
     
     private var startedTime: Int64 = 0
     
+    var message = Single<String>.just("HI")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     
@@ -151,6 +154,7 @@ extension DataEmittOperatorsViewController {
         
         
         Observable<Int>.interval(.seconds(1), scheduler: MainScheduler.instance)
+            .take(5)
             .subscribe(onNext: { [weak self] in
                 self?.timeStampedLog(message: "\($0)")
             })
@@ -182,6 +186,7 @@ extension DataEmittOperatorsViewController {
         timeStampedLog(message: "------- start task -------")
         
         Observable.range(start: 1, count: 10)
+            .subscribe(on: ConcurrentDispatchQueueScheduler.init(queue: .global()))
             .filter { $0.isMultiple(of: 2)}
             .map { "\($0)"}
             .subscribe(onNext: { [weak self] in
@@ -204,15 +209,4 @@ extension DataEmittOperatorsViewController {
     private func startTaskToGetFirstString() -> String { Thread.sleep(forTimeInterval: 1); self.threadLog(message: "Start task to emit 1"); return "1"}
     private func startTaskToGetSecondString() -> String { Thread.sleep(forTimeInterval: 1); self.threadLog(message: "Start task to emit 2"); return "2"}
     private func startTaskToGetThirdString() -> String {Thread.sleep(forTimeInterval: 1); self.threadLog(message: "Start task to emit 3"); return "3"}
-}
-
-
-extension Date {
-    var millisecondsSince1970:Int64 {
-        return Int64((self.timeIntervalSince1970 * 1000.0).rounded())
-    }
-    
-    init(milliseconds:Int64) {
-        self = Date(timeIntervalSince1970: TimeInterval(milliseconds) / 1000)
-    }
 }
