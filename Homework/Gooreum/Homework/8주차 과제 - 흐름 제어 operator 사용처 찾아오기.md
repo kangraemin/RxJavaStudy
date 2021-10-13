@@ -38,9 +38,8 @@
 
 ### 4.Debounce
 
-- **[개념]**
-    !
-        /Users/minguseo/Desktop/debounce.png
+- **[개념]**    
+    <img width="615" alt="debounce" src="https://user-images.githubusercontent.com/48742165/136822980-b17e071a-4b07-410b-a19c-a03749905e89.png">
     
     - 타이머를 지정해두고 타이머가 끝난 시점에 가장 최근의 값을 방출해준다.
     - 이벤트가 방출될때마다 타이머가 초기화된다
@@ -50,9 +49,9 @@
 
 ### 5.Throttle
 
-- **[개념]**
-    !
-        /Users/minguseo/Desktop/throttle.png
+- **[개념]**    
+    <img width="618" alt="throttle" src="https://user-images.githubusercontent.com/48742165/136822937-8f2d6aa4-7a55-4f35-85f0-ff4627c27bf4.png">
+
     - 타이머를 지정해두고 이벤트가 처음 방출되면 타이머 동안 어떤 이벤트도 방출되지 않는다.
     - 이벤트가 방출될때마다 타이머가 초기화되지 않는다.
 

@@ -24,7 +24,7 @@ Subject의 활용처를 미리 생각 해 볼 수 있습니다.Subject의 사용
          func dealLogic() {
             ...
                 에러 발생 {
-                 self?.onShowError.onNext(okAlert)
+                 self?.onShowError.do(:onNext(okAlert))
             ....
     }
     
@@ -60,7 +60,7 @@ Subject의 활용처를 미리 생각 해 볼 수 있습니다.Subject의 사용
         
         // Rx variables
         // 2
-        var emailSubject = BehaviorSubject<String?>(value: "")
+        var emailSubject = BehaviorSubject<String>(value: "")
         // 3
         let disposeBag = DisposeBag()
         
