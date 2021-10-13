@@ -520,10 +520,93 @@
             </objects>
             <point key="canvasLocation" x="1662" y="2117"/>
         </scene>
+        <!--Combining Operators View Controller-->
+        <scene sceneID="MdV-AN-gnS">
+            <objects>
+                <viewController storyboardIdentifier="CombiningOperators" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2ia-6H-00r" customClass="CombiningOperatorsViewController" customModule="RxStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4gW-6G-t8E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wLq-Vd-te9">
+                                <rect key="frame" x="0.0" y="280" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="el9-A2-k67"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zQd-Si-3SR">
+                                <rect key="frame" x="0.0" y="355" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yq6-8g-BFu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmZ-qC-Ih9">
+                                <rect key="frame" x="0.0" y="505" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YbN-qo-bg2"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Eh0-Nr-onm">
+                                <rect key="frame" x="399" y="285.5" width="10" height="9"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="Ldm-ap-vpL"/>
+                                    <constraint firstAttribute="height" constant="10" id="xFm-gd-2GK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="pqw-zW-U3n">
+                                <rect key="frame" x="399" y="360.5" width="10" height="9"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="10" id="I9Z-xQ-Qpv"/>
+                                    <constraint firstAttribute="height" constant="10" id="lLj-87-IIa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Cif-Q9-zus"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wLq-Vd-te9" firstAttribute="top" secondItem="Cif-Q9-zus" secondAttribute="top" constant="236" id="2NI-JA-xSY"/>
+                            <constraint firstItem="Cif-Q9-zus" firstAttribute="trailing" secondItem="Eh0-Nr-onm" secondAttribute="trailing" constant="5" id="2R1-ye-NFW"/>
+                            <constraint firstItem="zQd-Si-3SR" firstAttribute="top" secondItem="wLq-Vd-te9" secondAttribute="bottom" constant="25" id="4B4-4u-HSd"/>
+                            <constraint firstItem="pqw-zW-U3n" firstAttribute="top" secondItem="zQd-Si-3SR" secondAttribute="top" constant="5" id="58Q-9t-9Un"/>
+                            <constraint firstItem="Eh0-Nr-onm" firstAttribute="top" secondItem="wLq-Vd-te9" secondAttribute="top" constant="5" id="IIt-Wc-zts"/>
+                            <constraint firstItem="zQd-Si-3SR" firstAttribute="leading" secondItem="Cif-Q9-zus" secondAttribute="leading" id="L2f-wl-QKd"/>
+                            <constraint firstItem="wLq-Vd-te9" firstAttribute="trailing" secondItem="Cif-Q9-zus" secondAttribute="trailing" id="WDS-Xg-33j"/>
+                            <constraint firstItem="Cif-Q9-zus" firstAttribute="trailing" secondItem="WmZ-qC-Ih9" secondAttribute="trailing" id="XGn-Gi-vsR"/>
+                            <constraint firstItem="wLq-Vd-te9" firstAttribute="leading" secondItem="Cif-Q9-zus" secondAttribute="leading" id="Y2g-RU-Tt7"/>
+                            <constraint firstItem="zQd-Si-3SR" firstAttribute="trailing" secondItem="Cif-Q9-zus" secondAttribute="trailing" id="aQP-W2-SS5"/>
+                            <constraint firstItem="WmZ-qC-Ih9" firstAttribute="top" secondItem="zQd-Si-3SR" secondAttribute="bottom" constant="100" id="h2C-yg-dZx"/>
+                            <constraint firstItem="Cif-Q9-zus" firstAttribute="trailing" secondItem="pqw-zW-U3n" secondAttribute="trailing" constant="5" id="j83-re-6lM"/>
+                            <constraint firstItem="WmZ-qC-Ih9" firstAttribute="leading" secondItem="4gW-6G-t8E" secondAttribute="leading" id="saJ-Nl-TOd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9LL-gR-ndV"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="WmZ-qC-Ih9" id="EYH-wE-xgC"/>
+                        <outlet property="imgEmail" destination="Eh0-Nr-onm" id="q4H-b6-Cz3"/>
+                        <outlet property="imgPw" destination="pqw-zW-U3n" id="pYQ-UQ-KhG"/>
+                        <outlet property="txtEmail" destination="wLq-Vd-te9" id="a8g-Iw-PvY"/>
+                        <outlet property="txtPw" destination="zQd-Si-3SR" id="03h-CW-x3a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vEK-B0-k7y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407.2463768115945" y="2116.7410714285716"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

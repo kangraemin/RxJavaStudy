@@ -10,6 +10,7 @@
 		2E1BB8292706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1BB8282706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift */; };
 		2E1BB82B2706F1E2005FC0D0 /* TransformOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1BB82A2706F1E2005FC0D0 /* TransformOperatorsViewController.swift */; };
 		2E830B8D2712F14900DBC5AE /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E830B8C2712F14900DBC5AE /* Extension+Date.swift */; };
+		2E87237D27168C4800811842 /* CombiningOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E87237C27168C4800811842 /* CombiningOperatorsViewController.swift */; };
 		2EC9F19726D75D5C00A2F96B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9F19626D75D5C00A2F96B /* AppDelegate.swift */; };
 		2EC9F19926D75D5C00A2F96B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9F19826D75D5C00A2F96B /* SceneDelegate.swift */; };
 		2EC9F19B26D75D5C00A2F96B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC9F19A26D75D5C00A2F96B /* MainViewController.swift */; };
@@ -30,6 +31,7 @@
 		2E1BB8282706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEmittOperatorsViewController.swift; sourceTree = "<group>"; };
 		2E1BB82A2706F1E2005FC0D0 /* TransformOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformOperatorsViewController.swift; sourceTree = "<group>"; };
 		2E830B8C2712F14900DBC5AE /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		2E87237C27168C4800811842 /* CombiningOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombiningOperatorsViewController.swift; sourceTree = "<group>"; };
 		2EC9F19326D75D5C00A2F96B /* RxStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC9F19626D75D5C00A2F96B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EC9F19826D75D5C00A2F96B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			children = (
 				2E1BB8282706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift */,
 				2E1BB82A2706F1E2005FC0D0 /* TransformOperatorsViewController.swift */,
+				2E87237C27168C4800811842 /* CombiningOperatorsViewController.swift */,
 			);
 			path = Operator;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EC9F19B26D75D5C00A2F96B /* MainViewController.swift in Sources */,
+				2E87237D27168C4800811842 /* CombiningOperatorsViewController.swift in Sources */,
 				2EEEFFA526F320C50039EBE8 /* SubjectViewController.swift in Sources */,
 				2E1BB82B2706F1E2005FC0D0 /* TransformOperatorsViewController.swift in Sources */,
 				2E1BB8292706F1BF005FC0D0 /* DataEmittOperatorsViewController.swift in Sources */,

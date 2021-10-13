@@ -14,12 +14,23 @@ enum RxStudyCategories: String {
     case Subject = "Subject"
     case DataEmittOperators = "DataEmittOperators"
     case TransformOperators = "TransformOperators"
+    case CombiningOperators = "CombiningOperators"
 }
+
+enum CellIdentifiers: String {
+    case ObserverPattern = "ObserverPattern"
+    case StreamWithScheduler = "StreamWithScheduler"
+    case Subject = "Subject"
+    case DataEmittOperators = "DataEmittOperators"
+    case TransformOperators = "TransformOperators"
+    case CombiningOperators = "CombiningOperators"
+}
+
 
 class ControlTableViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    let categories = [RxStudyCategories.ObserverPattern, RxStudyCategories.StreamWithScheduler, RxStudyCategories.Subject, RxStudyCategories.DataEmittOperators, RxStudyCategories.TransformOperators]
+    let categories = [RxStudyCategories.ObserverPattern, RxStudyCategories.StreamWithScheduler, RxStudyCategories.Subject, RxStudyCategories.DataEmittOperators, RxStudyCategories.TransformOperators, RxStudyCategories.CombiningOperators]
 }
 
 extension ControlTableViewController: UITableViewDelegate, UITableViewDataSource {
@@ -37,7 +48,7 @@ extension ControlTableViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch categories[indexPath.row] {
         case .ObserverPattern :
-            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "ObserverPattern") as? MainViewController else {
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: CellIdentifiers.ObserverPattern.rawValue) as? MainViewController else {
                 fatalError()
             }
             self.navigationController?.pushViewController(viewController, animated: true)
@@ -49,19 +60,25 @@ extension ControlTableViewController: UITableViewDelegate, UITableViewDataSource
             self.navigationController?.pushViewController(viewController, animated: true)
             
         case .Subject:
-            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "Subject") as? SubjectViewController else {
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: CellIdentifiers.Subject.rawValue) as? SubjectViewController else {
                 fatalError()
             }
             self.navigationController?.pushViewController(viewController, animated: true)
         
         case .DataEmittOperators:
-            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "DataEmittOperators") as? DataEmittOperatorsViewController else {
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: CellIdentifiers.DataEmittOperators.rawValue) as? DataEmittOperatorsViewController else {
                 fatalError()
             }
             self.navigationController?.pushViewController(viewController, animated: true)
             
         case .TransformOperators:
-            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "TransformOperators") as? TransformOperatorsViewController else {
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: CellIdentifiers.TransformOperators.rawValue) as? TransformOperatorsViewController else {
+                fatalError()
+            }
+            self.navigationController?.pushViewController(viewController, animated: true)
+            
+        case .CombiningOperators:
+            guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: CellIdentifiers.CombiningOperators.rawValue) as? CombiningOperatorsViewController else {
                 fatalError()
             }
             self.navigationController?.pushViewController(viewController, animated: true)
