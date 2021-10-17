@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -48,4 +49,22 @@ dependencies {
 
     implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
     implementation 'com.jakewharton.rxbinding3:rxbinding:3.1.0'
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.7.2'
+    // retrofit-rxJava
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.7.2'
+    // gson converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    // OkHttp
+    implementation 'com.squareup.okhttp3:okhttp:3.14.7'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.2'
+
+    // Room
+    implementation "androidx.room:room-runtime:$room_version"
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$room_version"
+    // optional - RxJava support for Room
+    implementation "androidx.room:room-rxjava2:$room_version"
+    // https://stackoverflow.com/a/49323956
+    kapt "androidx.room:room-compiler:$room_version"
 }
