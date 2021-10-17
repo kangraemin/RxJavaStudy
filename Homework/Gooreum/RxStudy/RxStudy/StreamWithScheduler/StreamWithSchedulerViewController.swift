@@ -8,7 +8,7 @@
 import UIKit
 import RxSwift
 import NSObject_Rx
-import OSLog
+
 
 enum ErrorCase: Error {
     case Observable
@@ -18,7 +18,7 @@ enum ErrorCase: Error {
     case Maybe
 }
 
-class ViewController: UIViewController {
+class StreamWithSchedulerViewController: UIViewController {
     
     @IBOutlet weak var btnObservable: UIButton!
     @IBOutlet weak var btnSingle: UIButton!
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     //MARK: Observable
     @IBAction func btnObservable(_ sender: Any) {
         
-        Observable<String>.just("Observable Just") 
+        Observable<String>.just("Observable Just")
             .subscribe(on: MainScheduler.instance)
             .observe(on: CurrentThreadScheduler.instance)
             .observe(on: SerialDispatchQueueScheduler.init(internalSerialQueueName: "A"))
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
         self.createMaybe(value: "Maybe Create")
             .subscribe(on: concurrentMainScheduler)
             .observe(on: serialScheduler)
-            .subscribe( 
+            .subscribe(
                 onSuccess: {[self] in threadLog(message: $0)},
                 onError: {[self] in threadLog(message: $0.localizedDescription)},
                 onCompleted: {[self] in threadLog(message: "Maybe is Completed")})
@@ -106,7 +106,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController {
+extension StreamWithSchedulerViewController {
     private func threadLog<T>(message: T) {
         print("scheduler : ", "thread name = \(Thread.isMainThread ? "Main Thread" : "Background Thread" ) / message = \(message)")
     }
