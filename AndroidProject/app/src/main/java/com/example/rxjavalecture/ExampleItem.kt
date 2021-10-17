@@ -2,6 +2,7 @@ package com.example.rxjavalecture
 
 import android.app.Activity
 import androidx.annotation.StringRes
+import com.example.rxjavalecture.exercise.login.LoginExampleActivity
 import com.example.rxjavalecture.introduction.nonreactive.NonReactiveExampleActivity
 import com.example.rxjavalecture.introduction.reactive.ReactiveExampleActivity
 import com.example.rxjavalecture.observerpattern.noneobserverpattern.NoneObserverPatternActivity
@@ -27,5 +28,6 @@ enum class ExampleItem(val destinationClass: Class<out Activity>, @StringRes val
     TRANSFORM_OPERATOR_EXAMPLE(TransformOperatorExampleActivity::class.java, R.string.nine_week_example_title),
     RX_BINDING_EXAMPLE(RxBindingExampleActivity::class.java, R.string.ten_week_example_title),
     COMBINING_EXAMPLE(CombiningExampleActivity::class.java, R.string.eleven_week_title),
-    ERROR_HANDLING_EXAMPLE(ErrorHandlingExampleActivity::class.java, R.string.twelve_week_title);
+    ERROR_HANDLING_EXAMPLE(ErrorHandlingExampleActivity::class.java, R.string.twelve_week_title),
+    EXERCISE_RX(LoginExampleActivity::class.java, R.string.retrofit_room_example);
 }

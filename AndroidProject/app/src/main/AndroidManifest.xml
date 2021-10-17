@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rxjavalecture">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".CustomApplication"
         android:allowBackup="true"
@@ -10,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".operator.error.ErrorHandlingExampleActivity"></activity>
+        <activity android:name="com.example.rxjavalecture.exercise.login.LoginExampleActivity"></activity>
+        <activity android:name=".operator.error.ErrorHandlingExampleActivity" />
         <activity android:name=".operator.combining.CombiningExampleActivity" />
         <activity android:name=".rxbinding.RxBindingExampleActivity" />
         <activity android:name=".operator.transform.TransformOperatorExampleActivity" />

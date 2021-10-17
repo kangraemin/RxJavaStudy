@@ -31,4 +31,6 @@
     <string name="ten_week_example_title">RxBinding 소개</string>
     <string name="eleven_week_title">결합 operator 소개</string>
     <string name="twelve_week_title">에러 Handling operaotr 소개</string>
+    <string name="login_result_format">로그인 결과 : %s</string>
+    <string name="retrofit_room_example">RxJava - Retrofit / Room</string>
 </resources>
