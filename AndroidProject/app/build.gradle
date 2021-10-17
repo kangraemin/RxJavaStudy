@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -67,4 +68,10 @@ dependencies {
     implementation "androidx.room:room-rxjava2:$room_version"
     // https://stackoverflow.com/a/49323956
     kapt "androidx.room:room-compiler:$room_version"
+
+    implementation platform('com.google.firebase:firebase-bom:28.4.2')
+    // Declare the dependencies for the Firebase Cloud Messaging and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
 }
