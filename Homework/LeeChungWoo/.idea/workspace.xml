@@ -10,47 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6460cf07-0afe-4469-978e-885c26f8ca3f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/androidTest/java/com/lcw/study/rxstudy/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/java/com/lcw/study/rxstudy/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/app/src/test/java/com/lcw/study/rxstudy/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RxStudy/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
