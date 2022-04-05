@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxStudy">
         <activity
-            android:name=".MainActivity"
+            android:name=".step1.ObserverPatternActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
