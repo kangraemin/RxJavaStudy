@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4EB65A27FAE99E00830531 /* ObsProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EB65927FAE99E00830531 /* ObsProgressView.swift */; };
+		3A4EB76127FC68D300830531 /* ObsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EB76027FC68D200830531 /* ObsView.swift */; };
+		3A4EB76527FC70CE00830531 /* ObsStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4EB76427FC70CE00830531 /* ObsStepper.swift */; };
 		3AFA219727FA7B860059FD51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA219627FA7B860059FD51 /* AppDelegate.swift */; };
 		3AFA219927FA7B860059FD51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA219827FA7B860059FD51 /* SceneDelegate.swift */; };
 		3AFA219B27FA7B860059FD51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA219A27FA7B860059FD51 /* ViewController.swift */; };
 		3AFA219E27FA7B860059FD51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFA219C27FA7B860059FD51 /* Main.storyboard */; };
 		3AFA21A027FA7B880059FD51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFA219F27FA7B880059FD51 /* Assets.xcassets */; };
 		3AFA21A327FA7B880059FD51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFA21A127FA7B880059FD51 /* LaunchScreen.storyboard */; };
+		3AFA21AC27FAD4060059FD51 /* ObserverProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA21AB27FAD4060059FD51 /* ObserverProtocol.swift */; };
+		3AFA21AE27FAD5070059FD51 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA21AD27FAD5070059FD51 /* Subject.swift */; };
+		3AFA21B027FADA8D0059FD51 /* ObsTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA21AF27FADA8D0059FD51 /* ObsTF.swift */; };
 		8E0ADEEA85470E7DBA82001E /* Pods_RxStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C8D382C44C2CACA2E1E1ED /* Pods_RxStudy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		008829851221D7907B7F009D /* Pods-RxStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxStudy.debug.xcconfig"; path = "Target Support Files/Pods-RxStudy/Pods-RxStudy.debug.xcconfig"; sourceTree = "<group>"; };
+		3A4EB65927FAE99E00830531 /* ObsProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObsProgressView.swift; sourceTree = "<group>"; };
+		3A4EB76027FC68D200830531 /* ObsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObsView.swift; sourceTree = "<group>"; };
+		3A4EB76427FC70CE00830531 /* ObsStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObsStepper.swift; sourceTree = "<group>"; };
 		3AFA219327FA7B860059FD51 /* RxStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFA219627FA7B860059FD51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AFA219827FA7B860059FD51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +35,9 @@
 		3AFA219F27FA7B880059FD51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AFA21A227FA7B880059FD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AFA21A427FA7B880059FD51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AFA21AB27FAD4060059FD51 /* ObserverProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverProtocol.swift; sourceTree = "<group>"; };
+		3AFA21AD27FAD5070059FD51 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		3AFA21AF27FADA8D0059FD51 /* ObsTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObsTF.swift; sourceTree = "<group>"; };
 		80C8D382C44C2CACA2E1E1ED /* Pods_RxStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2868DB3AEB7AA78743188BE /* Pods-RxStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxStudy.release.xcconfig"; path = "Target Support Files/Pods-RxStudy/Pods-RxStudy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +82,12 @@
 				3AFA219F27FA7B880059FD51 /* Assets.xcassets */,
 				3AFA21A127FA7B880059FD51 /* LaunchScreen.storyboard */,
 				3AFA21A427FA7B880059FD51 /* Info.plist */,
+				3AFA21AB27FAD4060059FD51 /* ObserverProtocol.swift */,
+				3AFA21AD27FAD5070059FD51 /* Subject.swift */,
+				3AFA21AF27FADA8D0059FD51 /* ObsTF.swift */,
+				3A4EB65927FAE99E00830531 /* ObsProgressView.swift */,
+				3A4EB76027FC68D200830531 /* ObsView.swift */,
+				3A4EB76427FC70CE00830531 /* ObsStepper.swift */,
 			);
 			path = RxStudy;
 			sourceTree = "<group>";
@@ -88,7 +106,6 @@
 				008829851221D7907B7F009D /* Pods-RxStudy.debug.xcconfig */,
 				F2868DB3AEB7AA78743188BE /* Pods-RxStudy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +224,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4EB65A27FAE99E00830531 /* ObsProgressView.swift in Sources */,
+				3A4EB76527FC70CE00830531 /* ObsStepper.swift in Sources */,
 				3AFA219B27FA7B860059FD51 /* ViewController.swift in Sources */,
+				3AFA21AE27FAD5070059FD51 /* Subject.swift in Sources */,
+				3AFA21B027FADA8D0059FD51 /* ObsTF.swift in Sources */,
 				3AFA219727FA7B860059FD51 /* AppDelegate.swift in Sources */,
 				3AFA219927FA7B860059FD51 /* SceneDelegate.swift in Sources */,
+				3AFA21AC27FAD4060059FD51 /* ObserverProtocol.swift in Sources */,
+				3A4EB76127FC68D300830531 /* ObsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

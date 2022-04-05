@@ -1,24 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sr7-T7-sfF" customClass="ObsTF" customModule="RxStudy" customModuleProvider="target">
+                                <rect key="frame" x="87" y="184" width="240" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="KBD-uD-fge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAJ-e9-i1R" customClass="ObsView" customModule="RxStudy" customModuleProvider="target">
+                                <rect key="frame" x="87" y="403" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="dVD-M0-1ds"/>
+                                    <constraint firstAttribute="width" constant="240" id="qTx-KH-5Nm"/>
+                                </constraints>
+                            </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Mu-02-qeF" customClass="ObsProgressView" customModule="RxStudy" customModuleProvider="target">
+                                <rect key="frame" x="87" y="292" width="240" height="4"/>
+                            </progressView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="XiU-28-IfB" customClass="ObsStepper" customModule="RxStudy" customModuleProvider="target">
+                                <rect key="frame" x="160" y="327" width="94" height="32"/>
+                            </stepper>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sr7-T7-sfF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8V9-SS-45e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sr7-T7-sfF" secondAttribute="trailing" constant="87" id="9Li-sf-lt6"/>
+                            <constraint firstItem="sr7-T7-sfF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="BUx-fj-1Ii"/>
+                            <constraint firstItem="5Mu-02-qeF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="DHu-W3-xy7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Mu-02-qeF" secondAttribute="trailing" constant="87" id="JGY-1U-ZNE"/>
+                            <constraint firstItem="5Mu-02-qeF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M8W-TG-o2p"/>
+                            <constraint firstItem="5Mu-02-qeF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ro2-MH-x2X"/>
+                            <constraint firstItem="sr7-T7-sfF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="edH-wC-Kf0"/>
+                            <constraint firstItem="XiU-28-IfB" firstAttribute="top" secondItem="5Mu-02-qeF" secondAttribute="bottom" constant="31" id="gl7-Sh-T6Z"/>
+                            <constraint firstItem="pAJ-e9-i1R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jJZ-lJ-sEn"/>
+                            <constraint firstItem="XiU-28-IfB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oxZ-vG-3fQ"/>
+                            <constraint firstItem="pAJ-e9-i1R" firstAttribute="top" secondItem="XiU-28-IfB" secondAttribute="bottom" constant="44" id="uMk-dV-5pR"/>
+                            <constraint firstItem="5Mu-02-qeF" firstAttribute="top" secondItem="sr7-T7-sfF" secondAttribute="bottom" constant="74" id="vpd-S7-WQq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
