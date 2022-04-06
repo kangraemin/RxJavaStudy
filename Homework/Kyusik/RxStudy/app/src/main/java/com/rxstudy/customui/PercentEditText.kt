@@ -5,8 +5,8 @@ import android.util.AttributeSet
 import android.util.Log
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.widget.doAfterTextChanged
-import com.rxstudy.MainActivity.Companion.progressSubject
 import com.rxstudy.MyObserver
+import com.rxstudy.ObserverPatternActivity.Companion.progressSubject
 import com.rxstudy.util.TAG_OBSERVER_PATTERN
 import com.rxstudy.util.toInt
 

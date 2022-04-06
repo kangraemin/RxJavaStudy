@@ -3,8 +3,8 @@ package com.rxstudy.customui
 import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
-import com.rxstudy.MainActivity
 import com.rxstudy.MyObserver
+import com.rxstudy.ObserverPatternActivity.Companion.graphSubject
 import com.rxstudy.R
 
 class GraphTextView : AppCompatTextView, MyObserver<Int> {
@@ -14,7 +14,7 @@ class GraphTextView : AppCompatTextView, MyObserver<Int> {
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
 
     init {
-        MainActivity.graphSubject.subscribe(this)
+        graphSubject.subscribe(this)
     }
 
     override fun notifyDataIsArrived(value: Int?) {

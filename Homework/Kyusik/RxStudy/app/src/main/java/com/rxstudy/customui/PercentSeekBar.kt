@@ -5,8 +5,8 @@ import android.util.AttributeSet
 import android.util.Log
 import android.widget.SeekBar
 import androidx.appcompat.widget.AppCompatSeekBar
-import com.rxstudy.MainActivity
 import com.rxstudy.MyObserver
+import com.rxstudy.ObserverPatternActivity.Companion.progressSubject
 import com.rxstudy.util.TAG_OBSERVER_PATTERN
 
 class PercentSeekBar : AppCompatSeekBar, MyObserver<Int> {
@@ -18,12 +18,12 @@ class PercentSeekBar : AppCompatSeekBar, MyObserver<Int> {
     private var disableEditTextChangeListener = false
 
     init {
-        MainActivity.progressSubject.subscribe(this)
+        progressSubject.subscribe(this)
         setOnSeekBarChangeListener(object : OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 if (!disableEditTextChangeListener) {
                     Log.d(TAG_OBSERVER_PATTERN, "progress = $progress in SeekBar")
-                    MainActivity.progressSubject.value = progress
+                    progressSubject.value = progress
                 }
             }
 
