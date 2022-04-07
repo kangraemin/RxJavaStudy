@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".operator.CreateOperatorExampleActivity">
+
+        <Button
+            android:id="@+id/bt_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Example" />
+
+        <Button
+            android:id="@+id/bt_just"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Just Example" />
+
+        <Button
+            android:id="@+id/bt_defer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Defer Example" />
+
+        <Button
+            android:id="@+id/bt_from_callable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FromCallable Example" />
+
+        <Button
+            android:id="@+id/bt_iterable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FromIterable Example" />
+
+        <Button
+            android:id="@+id/bt_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interval Example" />
+
+        <Button
+            android:id="@+id/bt_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Timer Example" />
+
+        <Button
+            android:id="@+id/bt_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Range Example" />
+    </LinearLayout>
+</layout>

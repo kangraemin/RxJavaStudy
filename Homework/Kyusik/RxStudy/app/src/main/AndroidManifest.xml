@@ -9,6 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RxStudy">
+        <activity
+            android:name=".operator.CombiningExampleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RxBindingExampleActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".operator.CreateOperatorExampleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".operator.TransformOperatorExampleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ObserverPatternActivity"
+            android:exported="true" />
+        <activity
+            android:name=".StreamExampleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SubjectExampleActivity"
+            android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

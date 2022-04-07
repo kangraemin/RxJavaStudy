@@ -3,8 +3,8 @@ package com.rxstudy.customui
 import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatTextView
-import com.rxstudy.MainActivity
 import com.rxstudy.MyObserver
+import com.rxstudy.ObserverPatternActivity.Companion.progressSubject
 import com.rxstudy.R
 
 class PercentTextView : AppCompatTextView, MyObserver<Int> {
@@ -14,7 +14,7 @@ class PercentTextView : AppCompatTextView, MyObserver<Int> {
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
 
     init {
-        MainActivity.progressSubject.subscribe(this)
+        progressSubject.subscribe(this)
     }
 
     override fun notifyDataIsArrived(value: Int?) {

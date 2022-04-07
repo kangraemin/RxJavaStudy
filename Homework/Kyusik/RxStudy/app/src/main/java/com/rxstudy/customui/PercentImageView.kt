@@ -3,8 +3,8 @@ package com.rxstudy.customui
 import android.content.Context
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageView
-import com.rxstudy.MainActivity
 import com.rxstudy.MyObserver
+import com.rxstudy.ObserverPatternActivity.Companion.progressSubject
 
 class PercentImageView : AppCompatImageView, MyObserver<Int> {
 
@@ -13,7 +13,7 @@ class PercentImageView : AppCompatImageView, MyObserver<Int> {
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
 
     init {
-        MainActivity.progressSubject.subscribe(this)
+        progressSubject.subscribe(this)
     }
 
     override fun notifyDataIsArrived(value: Int?) {
