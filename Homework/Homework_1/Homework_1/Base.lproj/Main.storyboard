@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Observer Pattern View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ObserverPatternViewController" customModule="Homework_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="QLK-8x-3aP">
+                                <rect key="frame" x="107" y="298" width="200" height="300"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5pd-UH-eEn" customClass="PercentTextView" customModule="Homework_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="uqZ-rT-7ZG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="RGx-LK-AYh" customClass="PercentSliderView" customModule="Homework_1" customModuleProvider="target">
+                                        <rect key="frame" x="-2" y="67" width="204" height="68"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGe-VJ-Ooz" customClass="PercentLbl" customModule="Homework_1" customModuleProvider="target">
+                                        <rect key="frame" x="75" y="167" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Rzk-8j-hg9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l8c-Ym-EiD" customClass="PercentImageView" customModule="Homework_1" customModuleProvider="target">
+                                        <rect key="frame" x="75" y="250" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="XGN-FL-jIn"/>
+                                            <constraint firstAttribute="width" constant="50" id="gi8-eW-NRt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5pd-UH-eEn" firstAttribute="leading" secondItem="QLK-8x-3aP" secondAttribute="leading" id="8H8-Ug-iBa"/>
+                                    <constraint firstItem="RGx-LK-AYh" firstAttribute="leading" secondItem="QLK-8x-3aP" secondAttribute="leading" id="TWY-L6-x88"/>
+                                    <constraint firstAttribute="width" constant="200" id="b4H-pV-jic"/>
+                                    <constraint firstAttribute="height" constant="300" id="nsu-MW-wpv"/>
+                                    <constraint firstAttribute="trailing" secondItem="5pd-UH-eEn" secondAttribute="trailing" id="rW9-LJ-A5B"/>
+                                    <constraint firstAttribute="trailing" secondItem="RGx-LK-AYh" secondAttribute="trailing" id="zFD-u2-QI8"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QLK-8x-3aP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JVA-ve-r9c"/>
+                            <constraint firstItem="QLK-8x-3aP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xFk-Qm-E2e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="l8c-Ym-EiD" id="Tks-og-CBg"/>
+                        <outlet property="lbl" destination="UGe-VJ-Ooz" id="Sjt-Qh-H9E"/>
+                        <outlet property="slider" destination="RGx-LK-AYh" id="IsW-Yh-XJS"/>
+                        <outlet property="textField" destination="5pd-UH-eEn" id="HOa-3v-qNl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
