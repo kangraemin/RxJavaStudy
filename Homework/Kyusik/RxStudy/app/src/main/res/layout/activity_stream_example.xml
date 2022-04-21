@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            tools:context=".StreamExampleActivity">
+
+            <Button
+                android:id="@+id/bt_observable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Observable" />
+
+            <Button
+                android:id="@+id/bt_single"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Single" />
+
+            <Button
+                android:id="@+id/bt_flowable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flowable" />
+
+            <Button
+                android:id="@+id/bt_maybe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maybe" />
+
+            <Button
+                android:id="@+id/bt_completable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Completable" />
+        </LinearLayout>
+</layout>
