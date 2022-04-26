@@ -1,0 +1,26 @@
+{
+  "name": "rxjs-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/app.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2",
+    "tsc-watch": "^5.0.3",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@types/rx": "^4.1.2",
+    "rxjs": "^7.5.5"
+  }
+}
