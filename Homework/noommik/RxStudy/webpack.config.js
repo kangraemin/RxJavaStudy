@@ -1,15 +1,30 @@
 const path = require('path')
 const webpack = require('webpack')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const 
-HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
 	mode: 'production',
-	entry: './src/index.ts',
+	entry: {
+		vendor: './src/vendor.ts',
+		index: './src/index-4.ts',
+	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: '[name].js'
+		filename: '[name].bundle.js'
+	},
+
+	optimization: {
+		splitChunks: {
+			chunks: 'all',
+			cacheGroups: {
+				defaultVendors: {
+					test: /[\\/]node_modules[\\/]/,
+					priority: -10,
+					reuseExistingChunk: true,
+				},
+			},
+		},
 	},
 
 	resolve: {
@@ -29,7 +44,7 @@ module.exports = {
 		]
 	},
 
-	devtool: 'eval',
+	devtool: 'eval-cheap-source-map',
 
 	devServer: {
 		magicHtml: true,
@@ -38,10 +53,15 @@ module.exports = {
 		historyApiFallback: true,
 	},
 
+	performance: {
+		hints: process.env.NODE_ENV === 'production' ? "warning" : false
+	},
+
 	plugins: [
 		new webpack.ProgressPlugin(),
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
+			filename: 'index.html',
       template: 'index.html',
     }),
 	],
