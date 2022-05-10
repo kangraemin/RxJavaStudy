@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxStudy2">
         <activity
+            android:name=".StreamExampleActivity"
+            android:exported="false" />
+        <activity
             android:name=".observerpattern.ObserverPatternActivity"
             android:exported="false" />
         <activity

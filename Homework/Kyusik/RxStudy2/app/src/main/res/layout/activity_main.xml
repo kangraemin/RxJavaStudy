@@ -17,16 +17,10 @@
             android:text="Observer Pattern" />
 
         <Button
-            android:id="@+id/bt_observable_Just"
+            android:id="@+id/bt_stream_example"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Observable Just" />
-
-        <Button
-            android:id="@+id/bt_observable_interval"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Observable Interval" />
+            android:text="Stream Example" />
     </LinearLayout>
 
 
