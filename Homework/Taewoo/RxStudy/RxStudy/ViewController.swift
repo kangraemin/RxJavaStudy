@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
     static var progressSubject = Subject<Int>()
@@ -17,6 +18,10 @@ class ViewController: UIViewController {
         
         disposeBag = DisposeBag()
         justExample()
+        observableExample()
+        singleExample()
+        maybeExample()
+        completableExample()
     }
     
     func justExample() {
@@ -48,6 +53,66 @@ class ViewController: UIViewController {
                 print("onDisposed")
             })
             .disposed(by: disposeBag)
+    }
+    
+    func observableExample() {
+        Observable.just(15)
+            .observe(on: MainScheduler.instance)
+            .subscribe(on: OperationQueueScheduler(operationQueue: .main))
+            .subscribe { i in
+                print("onNext", i)
+                print(Thread.isMainThread)
+            } onDisposed: {
+                print("onDisposed")
+            }
+            .disposed(by: disposeBag)
+    }
+    
+    func singleExample() {
+        Single<Int>.create { single in
+            single(.success(3))
+            return Disposables.create()
+        }
+        .observe(on: MainScheduler.instance)
+        .subscribe(on: ConcurrentDispatchQueueScheduler(qos: .background))
+        .subscribe{
+            switch $0 {
+            case .success(let int):
+                print(int)
+            case .failure(let err):
+                print(err)
+            }
+        }
+        .disposed(by: disposeBag)
+    }
+    
+    func maybeExample() {
+        Maybe.just("Maybe")
+            .observe(on: CurrentThreadScheduler.instance)
+            .subscribe(on: SerialDispatchQueueScheduler(qos: .default))
+            .subscribe { str in
+                print(str)
+            } onDisposed: {
+                print("onMaybeDisposed")
+            }
+            .disposed(by: disposeBag)
+    }
+    
+    func completableExample() {
+        Completable.create { completable in
+            completable(.completed)
+            return Disposables.create()
+        }
+        .observe(on: MainScheduler.instance)
+        .subscribe(on: SerialDispatchQueueScheduler(qos: .default))
+        .subscribe {
+            print("success")
+        } onError: { err in
+            print(err)
+        } onDisposed: {
+            print("onCompletableDisposed")
+        }
+        .disposed(by: disposeBag)
     }
 }
 
