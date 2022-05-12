@@ -7,7 +7,7 @@ module.exports = {
 	mode: 'production',
 	entry: {
 		vendor: './src/vendor.ts',
-		index: './src/index-5.ts',
+		index: './src/index-6.ts',
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
