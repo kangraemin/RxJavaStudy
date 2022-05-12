@@ -11,9 +11,64 @@ import RxSwift
 class ViewController: UIViewController {
 
     let disposeBag = DisposeBag()
+    // 일반적인 input event에 사용합니다.
+    let publishSubject = PublishSubject<String>()
+    // 구독시에 데이터 방출이 없어도 기본값을 가지고 싶을 때 사용합니다.
+    let behaviorSubject  = BehaviorSubject<String>(value: "behavior")
+    // 구독시에 이전 값들을 사용하고 싶을 때 사용합니다.
+    let replaySubject = ReplaySubject<String>.create(bufferSize: 2)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        publishSubject.subscribe { event in
+            print("event!! \(event)")
+        } onError: { error in
+            print("error!! \(error.localizedDescription)")
+        } onCompleted: {
+            print("complete")
+        } onDisposed: {
+            print("dispose!")
+        }.disposed(by: disposeBag)
+        
+        publishSubject.subscribe { event in
+            print("behavior value \(event)")
+        } onError: { error in
+            print("error!! \(error.localizedDescription)")
+        } onCompleted: {
+            print("complete")
+        } onDisposed: {
+            print("dispose!")
+        }.disposed(by: disposeBag)
+        
+        replaySubject.subscribe { event in
+            print("replay value \(event)")
+        } onError: { error in
+            print("error!! \(error.localizedDescription)")
+        } onCompleted: {
+            print("complete")
+        } onDisposed: {
+            print("dispose!")
+        }.disposed(by: disposeBag)
+
+        publishSubject.onNext("publish subject!")
+        publishSubject.onCompleted()
+        
+        behaviorSubject.onCompleted()
+        
+        replaySubject.onNext("replay1")
+        replaySubject.onNext("replay2")
+
+        replaySubject.subscribe { event in
+            print("replay2 value \(event)")
+        } onError: { error in
+            print("error!! \(error.localizedDescription)")
+        } onCompleted: {
+            print("complete")
+        } onDisposed: {
+            print("dispose!")
+        }.disposed(by: disposeBag)
+        
         
         Observable<String>.create { observer in
             observer.onNext("hello~")
