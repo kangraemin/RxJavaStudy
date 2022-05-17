@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxStudy">
         <activity
+            android:name=".step7.OperatorTestActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".step5.SchedulerTestActivity"
             android:exported="true">
             <intent-filter>
