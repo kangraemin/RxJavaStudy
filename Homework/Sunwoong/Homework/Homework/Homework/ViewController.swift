@@ -11,6 +11,26 @@ import RxSwift
 class ViewController: UIViewController {
 
     let disposeBag = DisposeBag()
+    
+    // 일반적인 api통신같은 비동기 작업에 사용 합니다
+    let create = Observable<String>.create { observer in
+        observer.onNext("response")
+        
+        return Disposables.create()
+    }
+    
+    // 조건별로 다른 옵저버블을 리턴할수도 있습니다.
+    let defferd = Observable<String>.deferred {
+        if true {
+            return Observable.of("true")
+        } else {
+            return Observable.of("false")
+        }
+    }
+    
+    // 딱 단 하나의 값만 방출하고 싶을때 사용합니다.
+    let just = Observable.just("hello")
+
     // 일반적인 input event에 사용합니다.
     let publishSubject = PublishSubject<String>()
     // 구독시에 데이터 방출이 없어도 기본값을 가지고 싶을 때 사용합니다.
