@@ -1,11 +1,11 @@
-package com.example.rxstudy.create_defer_just
+package com.example.rxstudy.operator
 
 import android.util.Log
 import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 
-class OperatorSample {
+class CreateOperatorSample {
    //생각해보기 notion : https://handnew.notion.site/7-e68f768b33a445afa2b5e0580285bc69
    private val compositeDisposable = CompositeDisposable()
    private var startedTime = 0L
