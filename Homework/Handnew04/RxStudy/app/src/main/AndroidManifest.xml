@@ -25,6 +25,7 @@
         <activity android:name=".observerpattern.ui.ObserverPatternActivity"/>
         <activity android:name=".scheduler.SchedulerSampleActivity"/>
         <activity android:name=".operator.FlowControlOperatorSampleActivity"/>
+        <activity android:name=".rxbinding.RxBindingSampleActivity"/>
     </application>
 
 </manifest>

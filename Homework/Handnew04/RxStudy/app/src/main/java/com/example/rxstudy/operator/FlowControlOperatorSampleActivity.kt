@@ -100,7 +100,7 @@ class FlowControlOperatorSampleActivity : AppCompatActivity() {
          .doOnDispose { simpleLog("Task is disposed !") }
 
 
-   private val fromTempClicks = Observable.interval(1000, TimeUnit.MILLISECONDS)
+   private val fromTempClicks = Observable.interval(1000, TimeUnit.MILLISECONDS, Schedulers.io())
       .takeUntil { it >= 2 }
    // .subscribeOn(Schedulers.io())
 
