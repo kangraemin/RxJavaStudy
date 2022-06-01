@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_gravity="center_vertical"
         android:paddingStart="30dp"
-        android:paddingEnd="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:paddingEnd="30dp">
 
         <TextView
             android:id="@+id/tv_opacity_title"
@@ -26,17 +22,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/et_percent" />
 
-        <kr.co.kimriri.observerpattern.oberserverpattern.customui.PercentEditText
+        <com.example.rxjavalecture.observerpattern.oberserverpattern.customui.PercentEditText
             android:id="@+id/et_percent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
             android:hint="@string/first_week_observer_pattern_opacity_hint"
             android:inputType="number"
             android:textSize="13sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/tv_opacity_title"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginLeft="30dp" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_opacity_seek_bar_title"
@@ -48,7 +44,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_percent" />
 
-        <kr.co.kimriri.observerpattern.oberserverpattern.customui.PercentSeekBar
+        <com.example.rxjavalecture.observerpattern.oberserverpattern.customui.PercentSeekBar
             android:id="@+id/sb_percent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -57,7 +53,7 @@
             app:layout_constraintStart_toEndOf="@id/tv_opacity_seek_bar_title"
             app:layout_constraintTop_toTopOf="@id/tv_opacity_seek_bar_title" />
 
-        <kr.co.kimriri.observerpattern.oberserverpattern.customui.PercentImageView
+        <com.example.rxjavalecture.observerpattern.oberserverpattern.customui.PercentImageView
             android:id="@+id/img_opacity_result"
             android:layout_width="30dp"
             android:layout_height="30dp"
@@ -66,16 +62,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sb_percent" />
 
-        <kr.co.kimriri.observerpattern.oberserverpattern.customui.PercentTextView
+        <com.example.rxjavalecture.observerpattern.oberserverpattern.customui.PercentTextView
             android:id="@+id/tv_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
             android:textSize="13sp"
             app:layout_constraintBottom_toBottomOf="@id/img_opacity_result"
             app:layout_constraintStart_toEndOf="@id/img_opacity_result"
-            app:layout_constraintTop_toTopOf="@id/img_opacity_result"
-            android:layout_marginLeft="30dp" />
+            app:layout_constraintTop_toTopOf="@id/img_opacity_result" />
 
+
+        <Button
+            android:id="@+id/Week4Assignment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Week4Assignment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>
