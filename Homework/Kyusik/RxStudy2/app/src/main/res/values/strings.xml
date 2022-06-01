@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RxStudy2</string>
+
+    <string name="alpha_format">투명도 : %d%%</string>
+</resources>

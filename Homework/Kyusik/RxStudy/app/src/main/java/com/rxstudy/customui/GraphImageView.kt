@@ -2,11 +2,10 @@ package com.rxstudy.customui
 
 import android.content.Context
 import android.util.AttributeSet
-import android.util.Log
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatImageView
-import com.rxstudy.MainActivity
 import com.rxstudy.MyObserver
+import com.rxstudy.ObserverPatternActivity.Companion.graphSubject
 import com.rxstudy.util.getAddLinear
 
 class GraphImageView : AppCompatImageView, MyObserver<Int> {
@@ -16,7 +15,7 @@ class GraphImageView : AppCompatImageView, MyObserver<Int> {
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
 
     init {
-        MainActivity.graphSubject.subscribe(this)
+        graphSubject.subscribe(this)
     }
 
     override fun notifyDataIsArrived(value: Int?) {

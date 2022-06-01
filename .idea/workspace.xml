@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+
   <component name="ChangeListManager">
     <list default="true" id="6444cece-ad3d-44f2-80f6-07efcf260c3f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Homework/Gooreum/Homework/6주차 과제 - Subject 사용처 찾아오기 : 발행, 구독 해보기.md" beforeDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,10 +14,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+
   <component name="ProjectId" id="27HPjPMPkBEvWUsZEMgBH2hV9eB" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="flattenPackages" value="true" />
+
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -46,5 +50,6 @@
       <screen x="0" y="0" width="1280" height="672" />
     </state>
     <state x="420" y="91" key="FileChooserDialogImpl/0.0.1280.672@0.0.1280.672" timestamp="1648974209671" />
+
   </component>
 </project>

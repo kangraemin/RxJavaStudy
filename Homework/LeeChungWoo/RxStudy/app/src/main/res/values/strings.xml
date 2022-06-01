@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">RxJavaLecture</string>
+    <string name="first_week_observer_pattern_opacity_title">투명도 : </string>
+    <string name="first_week_observer_pattern_opacity_hint">투명도를 입력 해 주세요.</string>
+    <string name="first_week_observer_pattern_opacity_seek_bar_title">투명도 조절 : </string>
+    <string name="first_week_observer_pattern_result_format">투명도 : %d%%</string>
+    <string name="first_week_observer_pattern_example_first">옵저버 패턴 소개 - 1</string>
+    <string name="first_week_observer_pattern_example_second">옵저버 패턴 소개 - 2</string>
+    <string name="first_week_reactive_programming_example_first">반응형 프로그래밍 소개 - 1</string>
+    <string name="first_week_reactive_programming_example_second">반응형 프로그래밍 소개 - 2</string>
+    <string name="third_week_stream_implementation_example_title">스트림 구현체 소개</string>
+    <string name="third_week_stream_implementation_example_observable">observable 데이터 발행</string>
+    <string name="third_week_stream_implementation_example_flowable">flowable 데이터 발행</string>
+    <string name="third_week_stream_implementation_example_single">single 데이터 발행</string>
+    <string name="third_week_stream_implementation_example_completable">completable 데이터 발행</string>
+    <string name="third_week_stream_implementation_example_maybe">maybe 데이터 발행</string>
+    <string name="six_week_scheduler">스케쥴러 소개</string>
+    <string name="six_week_example_main_thread">main thread</string>
+    <string name="six_week_example_subscribe_on_io">subscribeOn io</string>
+    <string name="six_week_example_observe_on_main">observeOn main thread</string>
+    <string name="six_week_example_subscribe_on_computation">subscribOn computation</string>
+    <string name="six_week_multiple_observe_on">observeOn 여러번</string>
+    <string name="seven_week_example_title">Subject 소개</string>
+    <string name="seven_week_example_observable">Observable event</string>
+    <string name="seven_week_example_publish_subject_event">PublishSubject Event</string>
+    <string name="seven_week_example_behavior_subject_event">BehaviorSubject Event</string>
+    <string name="seven_week_example_async_subject_event">AsyncSubject Event</string>
+    <string name="seven_week_example_replay_subject_event">ReplaySubject Event</string>
+    <string name="eight_week_example_title">생성 operator 소개</string>
+    <string name="nine_week_example_title">변형 operator 소개</string>
+    <string name="ten_week_example_title">RxBinding 소개</string>
+    <string name="eleven_week_title">결합 operator 소개</string>
+    <string name="twelve_week_title">에러 Handling operaotr 소개</string>
+    <string name="login_result_format">로그인 결과 : %s</string>
+    <string name="retrofit_room_example">RxJava - Retrofit / Room</string>
+</resources>
