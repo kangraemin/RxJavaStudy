@@ -12,6 +12,7 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.functions.BiFunction
 import java.util.concurrent.TimeUnit
 
+//9주차 노션 https://handnew.notion.site/9-9712f5ae4c4e4a21bbcbcf17112b3220
 class RxBindingSampleActivity : AppCompatActivity() {
    private val compositeDisposable = CompositeDisposable()
    private lateinit var binding: ActivityRxbindingSampleBinding
@@ -32,9 +33,10 @@ class RxBindingSampleActivity : AppCompatActivity() {
       compositeDisposable.add(
          Observable
             .combineLatest(
-               binding.etId.textChanges(),
-               binding.etPw.textChanges(),
+               idStream,
+               pwStream,
                BiFunction { id: CharSequence, pw: CharSequence ->
+                  Log.e("combineLatest: ", "id: $id, pw: $pw")
                   return@BiFunction id.isNotEmpty() && pw.isNotEmpty()
                }
             )
@@ -46,6 +48,33 @@ class RxBindingSampleActivity : AppCompatActivity() {
                }
             }, {})
       )
+
+//      compositeDisposable.add(
+//         Observable
+//            .zip(
+//               idStream
+//                  .map {
+//                     Log.e("zip id", "id: $it")
+//                     it.isNotBlank()
+//                  },
+//               pwStream
+//                  .map {
+//                     Log.e("zip pw", "pw: $it")
+//                     it.isNotBlank()
+//                  },
+//               BiFunction { isNotBlankId: Boolean, isNotBlackPw: Boolean ->
+//                  Log.e("zip result: ", "id: $isNotBlankId, pw: $isNotBlackPw")
+//                  return@BiFunction isNotBlankId && isNotBlackPw
+//               }
+//            )
+//            .subscribe({
+//               if (it) {
+//                  doActivateButton()
+//               } else {
+//                  doDisabledButton()
+//               }
+//            }, {})
+//      )
 
       compositeDisposable.add(
          binding.tvLogin
