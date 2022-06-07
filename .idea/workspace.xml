@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="NONE" />
-  </component>
+
   <component name="ChangeListManager">
-    <list default="true" id="f6652c45-3b25-4960-8c9e-c17471e092a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2022_04_07_8_26___Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="6444cece-ad3d-44f2-80f6-07efcf260c3f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Homework/Gooreum/Homework/6주차 과제 - Subject 사용처 찾아오기 : 발행, 구독 해보기.md" beforeDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,38 +14,42 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="27MJKssJpltL4nZniSEkSoV6r5L" />
+
+  <component name="ProjectId" id="27HPjPMPkBEvWUsZEMgBH2hV9eB" />
   <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="flattenPackages" value="true" />
+
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/AndroidProject" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f6652c45-3b25-4960-8c9e-c17471e092a6" name="Default Changelist" comment="" />
-      <created>1649123960373</created>
+      <changelist id="6444cece-ad3d-44f2-80f6-07efcf260c3f" name="Default Changelist" comment="" />
+      <created>1648974172714</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1649123960373</updated>
+      <updated>1648974172714</updated>
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="WindowStateProjectService">
+    <state x="420" y="91" key="FileChooserDialogImpl" timestamp="1648974209671">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="420" y="91" key="FileChooserDialogImpl/0.0.1280.672@0.0.1280.672" timestamp="1648974209671" />
+
   </component>
 </project>
