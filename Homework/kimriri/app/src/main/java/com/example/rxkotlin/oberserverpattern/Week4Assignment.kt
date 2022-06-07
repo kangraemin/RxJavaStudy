@@ -1,4 +1,5 @@
 package com.example.rxkotlin.com
+import android.content.Intent
 import android.os.Bundle
 import android.os.SystemClock
 import android.util.Log
@@ -13,19 +14,28 @@ class Week4Assignment : AppCompatActivity() {
 
     private lateinit var mJustPrint: LinearLayout
     private lateinit var mReSet: Button
+    private lateinit var mGoTo6Week: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_week_4_assignment)
         mJustPrint = findViewById(R.id.just_print)
         mReSet = findViewById(R.id.ReSet)
+        mGoTo6Week = findViewById(R.id.go_to_6_week)
         mReSet.setOnClickListener { (setRxKotlinJust()) }
+        mGoTo6Week.setOnClickListener { (setGoTo6Week()) }
         RxKotlinJust()
     }
 
     private fun setRxKotlinJust() {
         mJustPrint.removeAllViews()
         RxKotlinJust()
+    }
+
+    private fun setGoTo6Week() {
+        val mGoTo6WeekIntent : Intent = Intent(this,Week6Assignment::class.java)
+        startActivity(mGoTo6WeekIntent)
+        finish()
     }
 
     fun AddNewTextView(strrxjust: String) {

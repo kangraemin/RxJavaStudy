@@ -24,6 +24,7 @@
         </activity>
         <activity android:name=".com.Week4Assignment"/>
         <activity android:name=".com.Week5Assignment"/>
+        <activity android:name=".com.Week6Assignment"/>
     </application>
 
 </manifest>
