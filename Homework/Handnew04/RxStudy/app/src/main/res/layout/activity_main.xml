@@ -13,19 +13,24 @@
       android:id="@+id/bt_observer_pattern"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Observer Pattern"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      android:text="Observer Pattern" />
 
    <Button
       android:id="@+id/bt_scheduler_sample"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="Scheduler Sample"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      android:text="Scheduler Sample" />
+
+
+   <Button
+      android:id="@+id/bt_flow_control_sample"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Flow Control Operators Sample" />
+
+   <Button
+      android:id="@+id/bt_rxbinding_sample"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="RxBinding Sample" />
 </LinearLayout>
