@@ -1,10 +1,10 @@
-package com.example.rxstudy.observerpattern.ui
+package com.example.observerpattern.ui
 
 import android.content.Context
 import android.util.AttributeSet
 import android.widget.SeekBar
 import androidx.appcompat.widget.AppCompatSeekBar
-import com.example.rxstudy.observerpattern.DefaultObserver
+import com.example.observerpattern.DefaultObserver
 
 class PercentSeekBar : AppCompatSeekBar, DefaultObserver<Int> {
    constructor(context: Context) : super(context)

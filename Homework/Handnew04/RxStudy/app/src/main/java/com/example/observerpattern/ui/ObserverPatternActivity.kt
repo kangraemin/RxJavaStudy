@@ -1,9 +1,9 @@
-package com.example.rxstudy.observerpattern.ui
+package com.example.observerpattern.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.rxstudy.R
-import com.example.rxstudy.observerpattern.DefaultSubject
+import com.example.observerpattern.DefaultSubject
 
 class ObserverPatternActivity : AppCompatActivity() {
    companion object {
