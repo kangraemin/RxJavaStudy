@@ -5,16 +5,16 @@
    android:gravity="center"
    android:orientation="vertical">
 
-   <com.example.rxstudy.observerpattern.ui.PercentEditText
+   <com.example.observerpattern.ui.PercentEditText
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:inputType="number"/>
 
-   <com.example.rxstudy.observerpattern.ui.PercentSeekBar
+   <com.example.observerpattern.ui.PercentSeekBar
       android:layout_width="match_parent"
       android:layout_height="wrap_content"/>
 
-   <com.example.rxstudy.observerpattern.ui.PercentTextView
+   <com.example.observerpattern.ui.PercentTextView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"/>
 </LinearLayout>

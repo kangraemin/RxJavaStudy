@@ -1,10 +1,11 @@
 package com.example.rxstudy
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.example.rxstudy.observerpattern.ui.ObserverPatternActivity
+import androidx.appcompat.app.AppCompatActivity
+import com.example.observerpattern.ui.ObserverPatternActivity
+import com.example.rxstudy.login.ui.LoginExampleActivity
 import com.example.rxstudy.operator.FlowControlOperatorSampleActivity
 import com.example.rxstudy.rxbinding.RxBindingSampleActivity
 import com.example.rxstudy.scheduler.SchedulerSampleActivity
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
    private lateinit var schedulerSampleButton: Button
    private lateinit var flowOperatorButton: Button
    private lateinit var rxBindingSampleButton: Button
+   private val loginExampleButton: Button by lazy { findViewById(R.id.bt_login_example) }
 
    override fun onCreate(savedInstanceState: Bundle?) {
       super.onCreate(savedInstanceState)
@@ -45,6 +47,11 @@ class MainActivity : AppCompatActivity() {
 
       rxBindingSampleButton.setOnClickListener {
          val intent = Intent(this@MainActivity, RxBindingSampleActivity::class.java)
+         startActivity(intent)
+      }
+
+      loginExampleButton.setOnClickListener {
+         val intent = Intent(this@MainActivity, LoginExampleActivity::class.java)
          startActivity(intent)
       }
    }

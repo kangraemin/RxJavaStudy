@@ -1,4 +1,4 @@
-package com.example.rxstudy.observerpattern
+package com.example.observerpattern
 
 import java.util.ArrayList
 
